@@ -1,6 +1,6 @@
 const quizData = [
   {
-    "question": "",
+    "question": "Refer to the image",
     "options": [
       "begin either with 0 or 1",
       "end with 0",
@@ -10,7 +10,7 @@ const quizData = [
     "correctAnswer": 2
   },
   {
-    "question": "",
+    "question": "Refer to the image",
     "options": [
       "15",
       "7",
@@ -20,7 +20,7 @@ const quizData = [
     "correctAnswer": 0
   },
   {
-    "question": "",
+    "question": "Refer to the image",
     "options": [
       "26",
       "1",
@@ -30,7 +30,7 @@ const quizData = [
     "correctAnswer": 3
   },
   {
-    "question": "",
+    "question": "Refer to the image",
     "options": [
       "(41,17,209)",
       "(41,17,697)",
@@ -40,7 +40,7 @@ const quizData = [
     "correctAnswer": 0
   },
   {
-    "question": "",
+    "question": "Refer to the image",
     "options": [
       "1411",
       "1088",
@@ -50,7 +50,7 @@ const quizData = [
     "correctAnswer": 1
   },
   {
-    "question": "",
+    "question": "Refer to the image",
     "options": [
       "3",
       "9",
@@ -10989,5 +10989,4 @@ const quizData = [
       "Data Dictionary Manager 1 111 112"
     ]
   }
-
 ]
