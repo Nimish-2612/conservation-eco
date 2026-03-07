@@ -3,10 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Quiz App</title>
-
+<title>Quiz Application</title>
 <link rel="stylesheet" href="styles.css">
-
 </head>
 
 <body>
@@ -14,308 +12,243 @@
 <div class="quiz-container">
 
 <div class="header">
-
-<h1>Quiz Application</h1>
+<h1>Comprehensive Quiz</h1>
 
 <div class="score">
 Score: <span id="score">0</span> /
-<span id="total">0</span>
+<span id="total"></span>
 </div>
-
 </div>
-
 
 <div class="progress-bar">
 <div class="progress" id="progress"></div>
 </div>
 
-
 <div id="quiz">
 
 <div class="question-number">
-Question <span id="current-question">1</span>
+Question <span id="current-question"></span>
 </div>
-
 
 <div id="question-container">
 
-<div class="question" id="question"></div>
+<div id="question" class="question"></div>
 
-<img id="question-image">
+<img id="question-image" />
 
 </div>
 
-
-<div class="options" id="options"></div>
-
+<div id="options" class="options"></div>
 
 <div class="navigation">
-
 <button id="prev-btn">Previous</button>
-
 <button id="next-btn">Next</button>
-
 </div>
 
 </div>
 
-
-<div class="result-container" id="result">
+<div id="result" class="result-container">
 
 <h2>Quiz Completed</h2>
 
-<p>Your final score: <span id="final-score"></span></p>
+<p>Your Score: <span id="final-score"></span></p>
 
-<button class="restart-btn" id="restart-btn">Restart Quiz</button>
-
-</div>
+<button id="restart-btn">Restart Quiz</button>
 
 </div>
 
-
+</div>
 
 <script src="questions.js"></script>
 
 <script>
 
-let randomizedQuizData = [...quizData];
+let quiz = [...quizData];
 
-function shuffleArray(array){
-
-for(let i=array.length-1;i>0;i--){
-
-const j=Math.floor(Math.random()*(i+1));
-
-[array[i],array[j]]=[array[j],array[i]]
-
+function shuffle(a){
+for(let i=a.length-1;i>0;i--){
+let j=Math.floor(Math.random()*(i+1));
+[a[i],a[j]]=[a[j],a[i]];
+}
+return a;
 }
 
-return array
+quiz = shuffle(quiz);
 
-}
+let current = 0;
+let score = 0;
 
-randomizedQuizData = shuffleArray(randomizedQuizData)
+let answered = new Array(quiz.length).fill(false);
 
+const questionEl = document.getElementById("question");
+const optionsEl = document.getElementById("options");
+const imageEl = document.getElementById("question-image");
 
-let currentQuestion=0
+const scoreEl = document.getElementById("score");
+const totalEl = document.getElementById("total");
 
-let score=0
+const currentQ = document.getElementById("current-question");
 
-let answered = new Array(randomizedQuizData.length).fill(false)
+const progress = document.getElementById("progress");
 
+const prevBtn = document.getElementById("prev-btn");
+const nextBtn = document.getElementById("next-btn");
 
+const quizEl = document.getElementById("quiz");
+const resultEl = document.getElementById("result");
 
-const questionEl=document.getElementById("question")
+const finalScore = document.getElementById("final-score");
 
-const optionsEl=document.getElementById("options")
-
-const imageEl=document.getElementById("question-image")
-
-const prevBtn=document.getElementById("prev-btn")
-
-const nextBtn=document.getElementById("next-btn")
-
-const currentQuestionEl=document.getElementById("current-question")
-
-const scoreEl=document.getElementById("score")
-
-const progressEl=document.getElementById("progress")
-
-const quizEl=document.getElementById("quiz")
-
-const resultEl=document.getElementById("result")
-
-const finalScoreEl=document.getElementById("final-score")
-
-const restartBtn=document.getElementById("restart-btn")
-
-document.getElementById("total").textContent = randomizedQuizData.length
-
-
+totalEl.textContent = quiz.length;
 
 function loadQuestion(){
 
-const q=randomizedQuizData[currentQuestion]
+let q = quiz[current];
 
-
-questionEl.textContent = q.question || "Refer to the options below"
-
+questionEl.textContent =
+q.question && q.question.trim() !== ""
+? q.question
+: "Refer to the options below";
 
 if(q.image){
+imageEl.src = q.image;
+imageEl.style.display="block";
+}else{
+imageEl.style.display="none";
+}
 
-imageEl.src=q.image
+optionsEl.innerHTML="";
 
-imageEl.style.display="block"
+q.options.forEach((opt,i)=>{
+
+if(!opt) return;
+
+let div=document.createElement("div");
+
+div.className="option";
+
+div.textContent=opt;
+
+if(!answered[current]){
+
+div.onclick=()=>selectOption(div,i);
 
 }
 
-else{
+optionsEl.appendChild(div);
 
-imageEl.style.display="none"
+});
 
-}
+currentQ.textContent = current+1;
 
+progress.style.width = ((current+1)/quiz.length)*100+"%";
 
-optionsEl.innerHTML=""
+prevBtn.disabled = current===0;
 
-
-q.options.forEach((option,index)=>{
-
-const div=document.createElement("div")
-
-div.classList.add("option")
-
-div.textContent=option
-
-
-if(!answered[currentQuestion]){
-
-div.onclick=()=>selectOption(div,index)
-
-}
-
-
-optionsEl.appendChild(div)
-
-})
-
-
-currentQuestionEl.textContent=currentQuestion+1
-
-
-progressEl.style.width=
-
-((currentQuestion+1)/randomizedQuizData.length)*100 + "%"
-
-
-prevBtn.disabled=currentQuestion===0
-
-
-nextBtn.textContent=
-
-currentQuestion===randomizedQuizData.length-1
-
+nextBtn.textContent =
+current===quiz.length-1
 ? "Finish"
-
-: "Next"
+: "Next";
 
 }
 
+function selectOption(el,index){
 
+if(answered[current]) return;
 
-function selectOption(element,index){
+let q=quiz[current];
 
-if(answered[currentQuestion]) return
+let options=document.querySelectorAll(".option");
 
-
-const q=randomizedQuizData[currentQuestion]
-
-
-const options = optionsEl.querySelectorAll(".option")
-
+if(q.correctAnswer!==undefined){
 
 if(index===q.correctAnswer){
 
-element.classList.add("correct")
+el.classList.add("correct");
 
-score++
+score++;
 
-scoreEl.textContent=score
+scoreEl.textContent=score;
 
-}
+}else{
 
-else{
+el.classList.add("incorrect");
 
-element.classList.add("incorrect")
-
-options[q.correctAnswer].classList.add("correct")
+options[q.correctAnswer]?.classList.add("correct");
 
 }
 
-
-answered[currentQuestion]=true
-
 }
 
+answered[current]=true;
 
+}
 
 function nextQuestion(){
 
-if(currentQuestion < randomizedQuizData.length-1){
+if(current<quiz.length-1){
 
-currentQuestion++
+current++;
 
-loadQuestion()
+loadQuestion();
 
-}
+}else{
 
-else{
-
-showResult()
+showResult();
 
 }
 
 }
-
-
 
 function prevQuestion(){
 
-if(currentQuestion>0){
+if(current>0){
 
-currentQuestion--
+current--;
 
-loadQuestion()
-
-}
+loadQuestion();
 
 }
 
-
+}
 
 function showResult(){
 
-quizEl.style.display="none"
+quizEl.style.display="none";
 
-resultEl.style.display="block"
+resultEl.style.display="block";
 
-finalScoreEl.textContent=score + "/" + randomizedQuizData.length
-
-}
-
-
-
-function restartQuiz(){
-
-randomizedQuizData = shuffleArray([...quizData])
-
-currentQuestion=0
-
-score=0
-
-answered = new Array(randomizedQuizData.length).fill(false)
-
-scoreEl.textContent=0
-
-quizEl.style.display="block"
-
-resultEl.style.display="none"
-
-loadQuestion()
+finalScore.textContent = score + " / " + quiz.length;
 
 }
 
+function restart(){
 
+quiz = shuffle([...quizData]);
 
-nextBtn.onclick=nextQuestion
+current=0;
 
-prevBtn.onclick=prevQuestion
+score=0;
 
-restartBtn.onclick=restartQuiz
+answered = new Array(quiz.length).fill(false);
 
+scoreEl.textContent=0;
 
+quizEl.style.display="block";
 
-loadQuestion()
+resultEl.style.display="none";
+
+loadQuestion();
+
+}
+
+nextBtn.onclick = nextQuestion;
+
+prevBtn.onclick = prevQuestion;
+
+document.getElementById("restart-btn").onclick = restart;
+
+loadQuestion();
 
 </script>
 
