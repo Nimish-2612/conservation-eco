@@ -1,198 +1,323 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Conservation Geography Quiz</title>
-    <link rel="stylesheet" href="./styles.css">
-  </head>
-  <body>
-    <div class="quiz-container">
-      <div class="header">
-        <h1>Conservation Geography Quiz</h1>
-        <div class="score">Score: <span id="score">0</span>/120</div>
-      </div>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiz App</title>
 
-      <div class="progress-bar">
-        <div class="progress" id="progress"></div>
-      </div>
+<link rel="stylesheet" href="styles.css">
 
-      <div id="quiz">
-        <div class="question-number">
-          Question <span id="current-question">1</span> of 120
-        </div>
-        <div class="question" id="question"></div>
-        <div class="options" id="options"></div>
+</head>
 
-        <div class="navigation">
-          <button id="prev-btn" disabled>Previous</button>
-          <button id="next-btn">Next</button>
-        </div>
-      </div>
+<body>
 
-      <div class="result-container" id="result">
-        <h2>Quiz Completed!</h2>
-        <p>Your final score is: <span id="final-score">0</span>/120</p>
-        <button class="restart-btn" id="restart-btn">Restart Quiz</button>
-      </div>
-    </div>
+<div class="quiz-container">
 
-    <!-- First load the questions.js file -->
-    <script src="questions-conGeo.js"></script>
-    
-    <!-- Then load the main script that uses the questions data -->
-    <script>
-      // Create a randomized copy of the questions
-      let randomizedQuizData = [...quizData]; // First make a copy
-      
-      // Fisher-Yates shuffle algorithm to randomize questions
-      function shuffleArray(array) {
-        for (let i = array.length - 1; i > 0; i--) {
-          const j = Math.floor(Math.random() * (i + 1));
-          [array[i], array[j]] = [array[j], array[i]];
-        }
-        return array;
-      }
-      
-      // Shuffle the questions
-      randomizedQuizData = shuffleArray(randomizedQuizData);
-      
-      let currentQuestion = 0;
-      let score = 0;
-      let answered = Array(randomizedQuizData.length).fill(false);
+<div class="header">
 
-      const questionEl = document.getElementById("question");
-      const optionsEl = document.getElementById("options");
-      const prevBtn = document.getElementById("prev-btn");
-      const nextBtn = document.getElementById("next-btn");
-      const currentQuestionEl = document.getElementById("current-question");
-      const scoreEl = document.getElementById("score");
-      const progressEl = document.getElementById("progress");
-      const quizEl = document.getElementById("quiz");
-      const resultEl = document.getElementById("result");
-      const finalScoreEl = document.getElementById("final-score");
-      const restartBtn = document.getElementById("restart-btn");
+<h1>Quiz Application</h1>
 
-      function loadQuestion() {
-        const question = randomizedQuizData[currentQuestion];
-        questionEl.textContent = question.question;
+<div class="score">
+Score: <span id="score">0</span> /
+<span id="total">0</span>
+</div>
 
-        optionsEl.innerHTML = "";
+</div>
 
-        // Create a copy of options to randomize answer positions
-        const randomizedOptions = [...question.options];
-        shuffleArray(randomizedOptions);
 
-        randomizedOptions.forEach((option) => {
-          const optionElement = document.createElement("div");
-          optionElement.classList.add("option");
-          optionElement.textContent = option;
+<div class="progress-bar">
+<div class="progress" id="progress"></div>
+</div>
 
-          if (answered[currentQuestion]) {
-            if (option === question.correctAnswer) {
-              optionElement.classList.add("correct");
-            } else if (
-              optionElement.textContent ===
-              document.querySelector(".option.incorrect")?.textContent
-            ) {
-              optionElement.classList.add("incorrect");
-            }
-          } else {
-            optionElement.addEventListener("click", () =>
-              selectOption(optionElement, option)
-            );
-          }
 
-          optionsEl.appendChild(optionElement);
-        });
+<div id="quiz">
 
-        currentQuestionEl.textContent = currentQuestion + 1;
-        progressEl.style.width = `${
-          ((currentQuestion + 1) / randomizedQuizData.length) * 100
-        }%`;
+<div class="question-number">
+Question <span id="current-question">1</span>
+</div>
 
-        prevBtn.disabled = currentQuestion === 0;
-        nextBtn.textContent =
-          currentQuestion === randomizedQuizData.length - 1 ? "Finish" : "Next";
-      }
 
-      function selectOption(selectedOption, selectedAnswer) {
-        if (answered[currentQuestion]) return;
+<div id="question-container">
 
-        const question = randomizedQuizData[currentQuestion];
+<div class="question" id="question"></div>
 
-        if (selectedAnswer === question.correctAnswer) {
-          selectedOption.classList.add("correct");
-          score++;
-          scoreEl.textContent = score;
-        } else {
-          selectedOption.classList.add("incorrect");
+<img id="question-image">
 
-          // Highlight the correct answer
-          const options = optionsEl.querySelectorAll(".option");
-          options.forEach((option) => {
-            if (option.textContent === question.correctAnswer) {
-              option.classList.add("correct");
-            }
-          });
-        }
+</div>
 
-        answered[currentQuestion] = true;
 
-        // Auto advance to next question after a short delay
-        if (currentQuestion < randomizedQuizData.length - 1) {
-          setTimeout(() => {
-            nextQuestion();
-          }, 1000);
-        }
-      }
+<div class="options" id="options"></div>
 
-      function nextQuestion() {
-        if (currentQuestion < randomizedQuizData.length - 1) {
-          currentQuestion++;
-          loadQuestion();
-        } else {
-          showResult();
-        }
-      }
 
-      function prevQuestion() {
-        if (currentQuestion > 0) {
-          currentQuestion--;
-          loadQuestion();
-        }
-      }
+<div class="navigation">
 
-      function showResult() {
-        quizEl.style.display = "none";
-        resultEl.style.display = "block";
-        finalScoreEl.textContent = score;
-      }
+<button id="prev-btn">Previous</button>
 
-      function restartQuiz() {
-        // Re-shuffle questions for a new quiz experience
-        randomizedQuizData = shuffleArray([...quizData]);
-        
-        currentQuestion = 0;
-        score = 0;
-        answered = Array(randomizedQuizData.length).fill(false);
-        scoreEl.textContent = score;
+<button id="next-btn">Next</button>
 
-        quizEl.style.display = "block";
-        resultEl.style.display = "none";
+</div>
 
-        loadQuestion();
-      }
+</div>
 
-      // Event listeners
-      nextBtn.addEventListener("click", nextQuestion);
-      prevBtn.addEventListener("click", prevQuestion);
-      restartBtn.addEventListener("click", restartQuiz);
 
-      // Initialize the quiz
-      loadQuestion();
-    </script>
-  </body>
+<div class="result-container" id="result">
 
+<h2>Quiz Completed</h2>
+
+<p>Your final score: <span id="final-score"></span></p>
+
+<button class="restart-btn" id="restart-btn">Restart Quiz</button>
+
+</div>
+
+</div>
+
+
+
+<script src="questions.js"></script>
+
+<script>
+
+let randomizedQuizData = [...quizData];
+
+function shuffleArray(array){
+
+for(let i=array.length-1;i>0;i--){
+
+const j=Math.floor(Math.random()*(i+1));
+
+[array[i],array[j]]=[array[j],array[i]]
+
+}
+
+return array
+
+}
+
+randomizedQuizData = shuffleArray(randomizedQuizData)
+
+
+let currentQuestion=0
+
+let score=0
+
+let answered = new Array(randomizedQuizData.length).fill(false)
+
+
+
+const questionEl=document.getElementById("question")
+
+const optionsEl=document.getElementById("options")
+
+const imageEl=document.getElementById("question-image")
+
+const prevBtn=document.getElementById("prev-btn")
+
+const nextBtn=document.getElementById("next-btn")
+
+const currentQuestionEl=document.getElementById("current-question")
+
+const scoreEl=document.getElementById("score")
+
+const progressEl=document.getElementById("progress")
+
+const quizEl=document.getElementById("quiz")
+
+const resultEl=document.getElementById("result")
+
+const finalScoreEl=document.getElementById("final-score")
+
+const restartBtn=document.getElementById("restart-btn")
+
+document.getElementById("total").textContent = randomizedQuizData.length
+
+
+
+function loadQuestion(){
+
+const q=randomizedQuizData[currentQuestion]
+
+
+questionEl.textContent = q.question || "Refer to the options below"
+
+
+if(q.image){
+
+imageEl.src=q.image
+
+imageEl.style.display="block"
+
+}
+
+else{
+
+imageEl.style.display="none"
+
+}
+
+
+optionsEl.innerHTML=""
+
+
+q.options.forEach((option,index)=>{
+
+const div=document.createElement("div")
+
+div.classList.add("option")
+
+div.textContent=option
+
+
+if(!answered[currentQuestion]){
+
+div.onclick=()=>selectOption(div,index)
+
+}
+
+
+optionsEl.appendChild(div)
+
+})
+
+
+currentQuestionEl.textContent=currentQuestion+1
+
+
+progressEl.style.width=
+
+((currentQuestion+1)/randomizedQuizData.length)*100 + "%"
+
+
+prevBtn.disabled=currentQuestion===0
+
+
+nextBtn.textContent=
+
+currentQuestion===randomizedQuizData.length-1
+
+? "Finish"
+
+: "Next"
+
+}
+
+
+
+function selectOption(element,index){
+
+if(answered[currentQuestion]) return
+
+
+const q=randomizedQuizData[currentQuestion]
+
+
+const options = optionsEl.querySelectorAll(".option")
+
+
+if(index===q.correctAnswer){
+
+element.classList.add("correct")
+
+score++
+
+scoreEl.textContent=score
+
+}
+
+else{
+
+element.classList.add("incorrect")
+
+options[q.correctAnswer].classList.add("correct")
+
+}
+
+
+answered[currentQuestion]=true
+
+}
+
+
+
+function nextQuestion(){
+
+if(currentQuestion < randomizedQuizData.length-1){
+
+currentQuestion++
+
+loadQuestion()
+
+}
+
+else{
+
+showResult()
+
+}
+
+}
+
+
+
+function prevQuestion(){
+
+if(currentQuestion>0){
+
+currentQuestion--
+
+loadQuestion()
+
+}
+
+}
+
+
+
+function showResult(){
+
+quizEl.style.display="none"
+
+resultEl.style.display="block"
+
+finalScoreEl.textContent=score + "/" + randomizedQuizData.length
+
+}
+
+
+
+function restartQuiz(){
+
+randomizedQuizData = shuffleArray([...quizData])
+
+currentQuestion=0
+
+score=0
+
+answered = new Array(randomizedQuizData.length).fill(false)
+
+scoreEl.textContent=0
+
+quizEl.style.display="block"
+
+resultEl.style.display="none"
+
+loadQuestion()
+
+}
+
+
+
+nextBtn.onclick=nextQuestion
+
+prevBtn.onclick=prevQuestion
+
+restartBtn.onclick=restartQuiz
+
+
+
+loadQuestion()
+
+</script>
+
+</body>
 </html>
-
