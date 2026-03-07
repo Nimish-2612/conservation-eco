@@ -1,6 +1,6 @@
 const quizData = [
   {
-    "question": "Refer to the image",
+    "question": "/images/image_q1.png",
     "options": [
       "begin either with 0 or 1",
       "end with 0",
@@ -10,7 +10,7 @@ const quizData = [
     "correctAnswer": 2
   },
   {
-    "question": "Refer to the image",
+    "question": "The inverse in Zm of the following elements 7 modulo 26 is",
     "options": [
       "15",
       "7",
@@ -20,7 +20,7 @@ const quizData = [
     "correctAnswer": 0
   },
   {
-    "question": "Refer to the image",
+    "question": "Value of Euler Totient phi(26) is",
     "options": [
       "26",
       "1",
@@ -30,7 +30,7 @@ const quizData = [
     "correctAnswer": 3
   },
   {
-    "question": "Refer to the image",
+    "question": "Let the two primes p = 41 and q = 17 be given as setup parameters for RSA. e = 49 be the public exponent. What is the private key (p,q,d)?",
     "options": [
       "(41,17,209)",
       "(41,17,697)",
@@ -40,7 +40,7 @@ const quizData = [
     "correctAnswer": 0
   },
   {
-    "question": "Refer to the image",
+    "question": "You are asked to attack an RSA encrypted message. You obtain the ciphertext y = 1141. Public key kpub = (n,e) = (2623, 2111). Determine the plaintext x by computing the private key d through factoring n = p.q .",
     "options": [
       "1411",
       "1088",
@@ -50,17 +50,17 @@ const quizData = [
     "correctAnswer": 1
   },
   {
-    "question": "Refer to the image",
+    "question": "Let E be an elliptic curve defined over Z7. Given the element a = (0,3) , determine the order of a",
     "options": [
       "3",
       "9",
       "0",
-      "7"
+      "6"
     ],
     "correctAnswer": 3
   },
   {
-    "question": "1 to 10 of 10",
+    "question": "/images/image_page6.png",
     "options": [
       "3 CNF-Sat",
       "4 CNF-Sat",
@@ -466,7 +466,8 @@ const quizData = [
       "<label>",
       "<legend>",
       "<textarea>"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "_______ event was triggered when the media start playing",
@@ -995,7 +996,8 @@ const quizData = [
       "INDIC",
       "Spacy",
       "TextBlob"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "Which tool is best suited for mathematical operations in Data Analysis?",
@@ -1024,7 +1026,8 @@ const quizData = [
       "Rijndael networks",
       "Feister networks",
       "Both (a) and (b)"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "Ensuring isolation property is the responsibility of the",
@@ -1033,7 +1036,8 @@ const quizData = [
       "Concurrency-control component of the DBMS",
       "Transaction-management component of the DBMS",
       "Buffer management component in DBMS"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "________ are the machine learning algorithms that can be used with unlabelled data.",
@@ -1352,7 +1356,8 @@ const quizData = [
       "Rectangle",
       "Ellipse",
       "Circle"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "L := 0 R := n − 1 while L ≤ R do m := floor((L + R) / 2) if A[m] < T then L := m + 1 else if A[m] > T then R := m − 1 else: return m return unsuccessful 1 to 10 of 10 131 to 140 of 1,134",
@@ -1387,18 +1392,20 @@ const quizData = [
   {
     "question": "1. Identify which graph below is a bipartite graph.",
     "options": [
-      "",
-      "",
-      ""
-    ]
+      "/images/bipartite_op1.png",
+      "/images/bipartite_op2.png",
+      "/images/bipartite_op3.png",
+      "/images/bipartite_op4.png"
+    ],
+    "correctAnswer": 2
   },
   {
-    "question": "1. In the network flow graph, the flow edges are marked in red. Identify the path from the list below which is a valid augmenting path when “Ford Fulkerson algorithm for finding max flow” is applied.",
+    "question": "1. In the network flow graph, the flow edges are marked in red. Identify the path from the list below which is a valid augmenting path when “Ford Fulkerson algorithm for finding max flow” is applied. /images/network_flow.png" ,
     "options": [
       "s-A-t",
       "s-B-t",
-      "s-B-A-t s-B-A-B-t",
-      ""
+      "s-B-A-t",
+      "s-B-A-B-t"
     ],
     "correctAnswer": 2
   },
@@ -1446,14 +1453,14 @@ const quizData = [
     "question": "1. Pick out the algorithm whose time O(n3) complexity is not",
     "options": [
       "Matrix multiplication",
-      "Floyd’s algorithm",
+      "Floyd's algorithm",
       "Warshall's algorithm",
       "Matrix Addition"
     ],
     "correctAnswer": 3
   },
   {
-    "question": "1. Pick out the statement below which is false. 1 to 10 of 10 141 to 150 of 1,134 1 …",
+    "question": "1. Pick out the statement below which is false. ",
     "options": [
       "The steps in a deterministic algorithm are uniquely defined",
       "The outcome of each step in a nondeterminisc algorithm cannot be determined",
@@ -1765,7 +1772,8 @@ const quizData = [
       "L1 = {0, 1}*",
       "L1 ⊆ L",
       "L1=L"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "Let w be any string of length n is {0,1}*. Let L be the set of all substring of w. State the minimum number of states in a NDFA that accepts L?",
@@ -1784,7 +1792,8 @@ const quizData = [
       "L2 is regular but not L1",
       "Both L2 and L1 are regular",
       "Neither L1 nor L2 are regular"
-    ]
+    ],
+    "correctAnswer": 3
   },
   {
     "question": ". The number of tokens in the following C code segment is 1. switch(inputvalue) 2. { 3. case 1 : b =c*d; break; 4. default : b =b++; break; 5. }",
@@ -1943,7 +1952,8 @@ const quizData = [
       "SaaS",
       "FaaS",
       "IaaS"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "The NIST Characteristics of the Cloud doesn’t include 1 to 10 of 10 191 to 200 of 1,134",
@@ -1951,7 +1961,8 @@ const quizData = [
       "On-demand Self Service",
       "Resource grouping",
       "Scalability Elasticity"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "Which of the following is google app engine implementation?",
@@ -2440,7 +2451,8 @@ const quizData = [
       "A & C",
       "D & C",
       "A & D"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "Match the following 1. Storage & Contenta. Message delivery Queuing Services 2. Networking b. Glacier 3. Application servicec. Direct Connect 4. Deployment & d. Elastic Beanstalk Management 1 to 10 of 10 241 to 250 of 1,134 1 …",
@@ -2459,7 +2471,8 @@ const quizData = [
       "Node could be in excited state or non-excited state",
       "It has set of nodes and connections",
       "All of these"
-    ]
+    ],
+    "correctAnswer": 3
   },
   {
     "question": "1. Choose the statement from below which is correct related to the bin packing approximation algorithm.",
@@ -2468,7 +2481,8 @@ const quizData = [
       "fit places item in the current bin or in the next bin",
       "Best fit looks for the first hole large enough for the item",
       "fit and First fit produce same result always"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "1. A series of equal space time pulses may be easily generated by which type of counter circuit?",
@@ -2477,7 +2491,8 @@ const quizData = [
       "Clock Shift",
       "Binary Shift",
       "Ring Counter"
-    ]
+    ],
+    "correctAnswer": 3
   },
   {
     "question": "1. The primary difference between a counter and a register is",
@@ -2486,7 +2501,8 @@ const quizData = [
       "A register counts data.",
       "A register has no specific sequence of states.",
       "A counter has no particular sequence of states."
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "State true or False. In python programming, Strings are easily modifiable and mutable in nature.",
@@ -2495,7 +2511,8 @@ const quizData = [
       "False",
       "Not Sure",
       "Both are correct"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "Figure out which of these is part of the Google cloud service models? i) Workspace ii) Computer Engine iii)Cloud Pricing Calculator",
@@ -2504,7 +2521,8 @@ const quizData = [
       "i & iii",
       "ii & iii",
       "i, ii, iii"
-    ]
+    ],
+    "correctAnswer": 3
   },
   {
     "question": "1. Cloud computing architecture is a combination of? 1.Service-oriented architecture 2. Grid architecture 3. Utility architecture 4. Event-driven architecture.",
@@ -2513,7 +2531,8 @@ const quizData = [
       "2& 3",
       "3& 4",
       "2& 4"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "Which is/ are True about FaaS A. A subset of serverless B. Event-driven computing C. Run and manage microservices applications D. Require significant maintenance for updating and managing operating systems.",
@@ -2522,7 +2541,8 @@ const quizData = [
       "A , B & D",
       "D",
       "B & D"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "Challenges in Cloud Computing A. Conflict to legacy programs B. Provenance C. QoS Measurement D. Reduction in Latency",
@@ -2531,7 +2551,8 @@ const quizData = [
       "A & C",
       "D & C",
       "A & D"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "Match the following 1. Storage & Contenta. Message delivery Queuing Services 2. Networking b. Glacier 3. Application servicec. Direct Connect 4. Deployment & d. Elastic Beanstalk Management 1 to 10 of 10 241 to 250 of 1,134 1 …",
@@ -2540,7 +2561,8 @@ const quizData = [
       "1-b ,2-a,3-c,4-d",
       "1-a ,2-b,3-d,4-c",
       "1-b ,2-c,3-a,4-d"
-    ]
+    ],
+    "correctAnswer": 3
   },
   {
     "question": "1. Express Y = (A+B+C' ) (A+ B'+C' )(A+B+C) in maxterm designation",
@@ -2559,7 +2581,8 @@ const quizData = [
       "event target",
       "both event type and even target",
       "interface"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "What will be the output of the following Python expression if x=56.236? print(\"%.2f\"%x)?",
@@ -2568,7 +2591,8 @@ const quizData = [
       "56.23",
       "56.0000",
       "56.24"
-    ]
+    ],
+    "correctAnswer": 3
   },
   {
     "question": "Which of the following bus is used to transfer data from main memory to peripheral device?",
@@ -2577,7 +2601,8 @@ const quizData = [
       "IO bus",
       "Address BUs",
       "Data bus"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "Library-level virtualization is also known as",
@@ -2586,7 +2611,8 @@ const quizData = [
       "OS-level virtualization",
       "process- level virtualization",
       ""
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "Which one of the following is not a type-1 hypervisor?",
@@ -2595,7 +2621,8 @@ const quizData = [
       "Hyper-V",
       "KVM",
       "Virtualbox"
-    ]
+    ],
+    "correctAnswer": 3
   },
   {
     "question": "method are used to register a keyboard event listener.",
@@ -2604,7 +2631,8 @@ const quizData = [
       "addkistener()",
       "addkeylistener()",
       "eventkeyboardlistener()"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "which of these events will be notified if scroll bar is manipulated?",
@@ -2613,7 +2641,8 @@ const quizData = [
       "actionevent",
       "adjustmentevent",
       ""
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "which of these methods are used to register a mouse motion listener?",
@@ -2622,7 +2651,8 @@ const quizData = [
       "addmouselistener()",
       "addmousemotionlistner()",
       "eventmousemotionlistener()"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "which of these methods can be used to determine the type of event? 1 to 10 of 10 251 to 260 of 1,134 1 …",
@@ -2631,7 +2661,8 @@ const quizData = [
       "getevent()",
       "getsource()",
       "geteventobject()"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "If R represents a regular language, which of the following represents the Venn-diagram most correctly?",
@@ -2640,7 +2671,8 @@ const quizData = [
       "R*",
       "R complement",
       "R reverse"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "If the instruction, Add R1,R2,R3 is executed in a system which is pipe-lined, then the value of S is (Where S is term of the Basic performance equation)",
@@ -2649,7 +2681,8 @@ const quizData = [
       "~2",
       "~1",
       "6"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "In a MapReduce programming model, the number of mapper for word counting problem is",
@@ -2667,7 +2700,8 @@ const quizData = [
       "Both I and II",
       "Both I and III",
       "Both II and III"
-    ]
+    ],
+    "correctAnswer": 3
   },
   {
     "question": "Let for ∑= {0,1} R= (∑∑∑) *, the language of R would be",
@@ -2676,7 +2710,8 @@ const quizData = [
       "{w | w is a string of length multiple of 3}",
       "{w | w is a string of length 3}",
       "{w | w is a string of at most length"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "Scalability refers to a parallel system’s (hardware and/or software) ability",
@@ -2685,7 +2720,8 @@ const quizData = [
       "To demonstrate a proportionate increase in parallel speedup with the addition of more processors",
       "To demonstrate a proportionate decrease in parallel speedup with the addition of more processors",
       "A sequential execution of a program, one statement at a time"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "Synchronous communication operations referred to",
@@ -2694,7 +2730,8 @@ const quizData = [
       "It exists between program statements when the order of statement execution affects the results of the program.",
       "It refers to the practice of distributing work among tasks so that all tasks are kept busy all of the time. It can be considered as minimization of task idle time.",
       "Involves many tasks executing a communication operation"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "Synchronous communications",
@@ -2703,7 +2740,8 @@ const quizData = [
       "It involves data sharing between more than two tasks, which are often specified as being members in a common group, or collective",
       "It involves two tasks with one task acting as the sender/producer of data, and the other acting as the receiver/consumer.",
       "It allows tasks to transfer data independently from one another."
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "Two processors A and B have clock frequencies of 700 Mhz and 900 Mhz respectively. Suppose A can execute an instruction with an average of 3 steps and B can execute with an average of 5 steps. For the execution of the same instruction which processor is faster ?",
@@ -2712,7 +2750,8 @@ const quizData = [
       "Processor B",
       "Processor A and B",
       "Insufficient Information"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "what is the prototype of the default constructor of this class? public class prototype { }",
@@ -2721,7 +2760,8 @@ const quizData = [
       "prototype(void)",
       "public prototype(void)",
       "public prototype( )"
-    ]
+    ],
+    "correctAnswer": 3
   },
   {
     "question": "Which Algorithm is better choice for pipelining?",
@@ -2730,7 +2770,8 @@ const quizData = [
       "hash algorithm",
       "merge-sort algorithm",
       "quick-sort algorithm"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "which function is used to perform some action when the object is to be destroyed?",
@@ -2739,7 +2780,8 @@ const quizData = [
       "delete()",
       "main()",
       "deleteAll()"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "which of the following handles the exception when a catch is not used?",
@@ -2748,7 +2790,8 @@ const quizData = [
       "throw handler",
       "default handler",
       "java run me system"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "which of the following is a super class of all exception type classes?",
@@ -2757,7 +2800,8 @@ const quizData = [
       "runtimeexceptions",
       "string",
       "throwable"
-    ]
+    ],
+    "correctAnswer": 3
   },
   {
     "question": "which of the following keyword is used by calling function to handle exception thrown by called function?",
@@ -2766,7 +2810,8 @@ const quizData = [
       "throw",
       "try",
       "catch"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "Which of the following services that need to be negotiated in Service Level Agreements ? I) Logging II)Auditing III) Regulatory compliance",
@@ -2775,7 +2820,8 @@ const quizData = [
       "Both I and III",
       "Both II and III",
       "I, II and III"
-    ]
+    ],
+    "correctAnswer": 3
   },
   {
     "question": "which of the following statements are incorrect?",
@@ -2784,7 +2830,8 @@ const quizData = [
       "constructor can be parameterized.",
       "finalize() method is called when a object goes out of scope and is no longer needed.",
       "finalize() method must be declared"
-    ]
+    ],
+    "correctAnswer": 3
   },
   {
     "question": "which of these class contains the methods used to write in a file?",
@@ -2793,7 +2840,8 @@ const quizData = [
       "fileinputstream",
       "bufferedoutputstream",
       "filebufferstream"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "which of these exception is thrown in cases when the file specified for writing is not found?",
@@ -2802,7 +2850,8 @@ const quizData = [
       "fileexception",
       "filenotfoundexception",
       "fileinputexcepon"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "Which of these is a process of writing the state of an object to a byte stream? 1 to 10 of 10 281 to 290 of 1,134 1 …",
@@ -2811,7 +2860,8 @@ const quizData = [
       "externalization",
       "file filtering",
       "object streaming"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "which of these keywords is used to refer to member of base class from a sub class?",
@@ -2820,7 +2870,8 @@ const quizData = [
       "super",
       "this",
       ""
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "which of these methods are used to read in from file?",
@@ -2829,7 +2880,8 @@ const quizData = [
       "read()",
       "scan()",
       "readfileinput()"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "which of these methods is used to print stack trace?",
@@ -2838,7 +2890,8 @@ const quizData = [
       "printstacktrace()",
       "getstacktrace()",
       "displaystacktrace()"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "which of these methods return description of an exception?",
@@ -2847,7 +2900,8 @@ const quizData = [
       "getmessage()",
       "obtaindescription()",
       "obtainexcepon()"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "which of these values is returned by read() method is end of file (eof) is encountered?",
@@ -2856,7 +2910,8 @@ const quizData = [
       "1",
       "-1",
       "null"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "Which one of the following is not a benefit of virtualization?",
@@ -2874,7 +2929,8 @@ const quizData = [
       "MQTT Server",
       "MQTT Broker",
       "MQTT Connection"
-    ]
+    ],
+    "correctAnswer": 3
   },
   {
     "question": "Which one of the following is not applicable for HDFS ( Haddop Distributed File System)",
@@ -2883,7 +2939,8 @@ const quizData = [
       "Streaming data access",
       "Commodity hardware",
       "Low latency data access"
-    ]
+    ],
+    "correctAnswer": 3
   },
   {
     "question": "Which one of the following is not true about full virtualization?",
@@ -2892,7 +2949,8 @@ const quizData = [
       "completely simulates the underlying hardware",
       "fully decouples the guest OS",
       "Guest OS completely aware of its virtualization"
-    ]
+    ],
+    "correctAnswer": 3
   },
   {
     "question": "Which one of the following is the unique challenge of cloud security than the traditional cyber security? 1 to 10 of 10 291 to 300 of 1,134 1 …",
@@ -2901,7 +2959,8 @@ const quizData = [
       "Used individually managed security tools",
       "Static resources contain security boundaries",
       "Dynamic resources blurred security boundaries"
-    ]
+    ],
+    "correctAnswer": 3
   },
   {
     "question": "Which one of the following is used to publish/subscribe the message through MQTT protocol?",
@@ -2910,7 +2969,8 @@ const quizData = [
       "Topic",
       "Keyword",
       "Ticket"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "Which one of the following takes set of data and converts it into another set of data, where individual elements are broken down into tuples (key/value pairs).",
@@ -2919,7 +2979,8 @@ const quizData = [
       "Reducer",
       "Shuffler",
       "Splitter"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "Which one of the following takes the output from a map as an input and combines those data tuples into a smaller set of tuples?",
@@ -2928,7 +2989,8 @@ const quizData = [
       "Reducer",
       "Shuffler",
       ""
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "A simple acyclic path between source and sink which pass through only positive weighted edges is called",
@@ -2937,7 +2999,8 @@ const quizData = [
       "critical path",
       "residual path",
       ""
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "Class P is the set of _______________ that can be solved in worst-case polynomial time",
@@ -2946,7 +3009,8 @@ const quizData = [
       "optimization problem",
       "optimization decision problem",
       "Unsolvable problm"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "Floyd Warshall Algorithm can be applied on __________",
@@ -2955,7 +3019,8 @@ const quizData = [
       "Undirected graphs",
       "Directed graphs",
       "Acyclic graph"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "If a problem is NP-complete there is ________________no polynomial-time algorithm to find an optimal solution",
@@ -2964,7 +3029,8 @@ const quizData = [
       "approximately",
       "most likely",
       "very likely"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "Which of the following is not a branch and bound strategy to generate branches",
@@ -2973,7 +3039,8 @@ const quizData = [
       "FIFO branch and bound",
       "Lowest cost branch and bound",
       "Highest cost branch and bound"
-    ]
+    ],
+    "correctAnswer": 3
   },
   {
     "question": "What is the correct sequence to create a database connection? i. Import JDBC packages. ii. Open a connection to the database. iii. Load and register the JDBC driver. iv. Execute the statement object and return a query resultset. v. Create a statement object to perform a query. vi. Close the resultset and statement objects. vii. Process the resultset. viii. Close the connection. What will be the output of the following Java program?",
@@ -2982,7 +3049,8 @@ const quizData = [
       "i, iii, ii, v, iv, vii, vi, viii",
       "ii, i, iii, iv, viii, vii, v, vi",
       "i, iii, ii, iv, v, vi, vii, viii"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "What will be the output of the following Java program? 1 to 10 of 10 301 to 310 of 1,134",
@@ -2991,7 +3059,8 @@ const quizData = [
       "true",
       "1",
       "Compilation error"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "",
@@ -3000,7 +3069,8 @@ const quizData = [
       "2",
       "Runtime Error",
       "Compilation error"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "When does Exceptions in Java arises in code sequence?",
@@ -3009,7 +3079,8 @@ const quizData = [
       "Compilation time",
       "Deployment time",
       "Linking time"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "Let us consider single-link and complete-link hierarchical clustering. In which of these approaches, it is possible for a point to be closer to points in other clusters than the points in its own cluster?",
@@ -3018,7 +3089,8 @@ const quizData = [
       "It is possible in complete-link clustering",
       "Both in single-link and complete-link clustering",
       "Neither in single-link nor in complete-link values"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "For SVM, which options are correct? A) Support vectors are data points that are closer to the hyperplane and influence the position and orientation of the hyperplane B) Support vectors are data points that are far away from the hyperplane and influence the position and orientation of the hyperplane C) Deleting the support vectors will change the position of the hyperplane D) Deleting the support vectors won’t change the position of the hyperplane",
@@ -3027,7 +3099,8 @@ const quizData = [
       "A and C",
       "B and C",
       "A and D"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "Which options are true for SVM? A) The distance of the vectors from the margin is called the hyperplane B) The loss function that helps minimize the margin is called hinge loss C) SVM can solve the linearly separable data points D) SVM can solve the data points that are not linearly separable",
@@ -3036,7 +3109,8 @@ const quizData = [
       "A and D",
       "C and D",
       "C and B"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "Which services are not provided by a Server?",
@@ -3045,7 +3119,8 @@ const quizData = [
       "Resource Sharing",
       "Virus Scanning",
       "Data Sharing"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "When a victim is forced to perform an unintended action on a web application they are logged into is called _______ attack",
@@ -3054,7 +3129,8 @@ const quizData = [
       "Cross-Site Request Forgery",
       "Request Redirect Forgery",
       "Access Redirect Forgery"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "What are the major components of the JDBC?",
@@ -3063,7 +3139,8 @@ const quizData = [
       "DriverManager, Driver, Connection, and Statement",
       "DriverManager, Statement, and ResultSet",
       "DriverManager, Connection, Statement, and ResultSet"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "Which of the following is the correct to register a JdbcOdbcDriver?",
@@ -3072,7 +3149,8 @@ const quizData = [
       "odbc.JdbcOdbcDriver obj = new sun.odbc.JdbcOdbcDriver();",
       "jdbc.JdbcOdbcDriver obj = new sun.jdbc.JdbcOdbcDriver();",
       "jdbc.odbc.JdbcOdbc obj = new sun.jdbc.odbc.JdbcOdbc();"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "Which of the following method is used to perform DML statements in JDBC? 1 to 10 of 10 311 to 320 of 1,134 1 …",
@@ -3081,7 +3159,8 @@ const quizData = [
       "executeQuery()",
       "executeUpdate()",
       "execute()"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "Which of the following is not the form type for adding text?",
@@ -3090,7 +3169,8 @@ const quizData = [
       "Text area",
       "Password input",
       "Submit button"
-    ]
+    ],
+    "correctAnswer": 3
   },
   {
     "question": "Form validation traditionally was performed by ___________",
@@ -3099,7 +3179,8 @@ const quizData = [
       "HTML",
       "JavaScript",
       "jQuery"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "The client-side JavaScript asynchronous programming model contains _________",
@@ -3108,7 +3189,8 @@ const quizData = [
       "User interface events",
       "State change events",
       "API-specific events"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "The events that are not triggered directly by user activity are called ___________",
@@ -3117,7 +3199,8 @@ const quizData = [
       "Device-dependent input events",
       "User interface events",
       "State change events"
-    ]
+    ],
+    "correctAnswer": 3
   },
   {
     "question": "The process by which the browser decides which objects to trigger event handlers on is ____________",
@@ -3126,7 +3209,8 @@ const quizData = [
       "b) Event Listening",
       "c) Event Handling",
       "d) Event propagation"
-    ]
+    ],
+    "correctAnswer": 3
   },
   {
     "question": "The type that specifies what kind of event occurred is ____________",
@@ -3135,7 +3219,8 @@ const quizData = [
       "even target",
       "both event type and even target",
       "interface"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "The word 'document' mainly refers to",
@@ -3144,7 +3229,8 @@ const quizData = [
       "",
       "Both Dynamic and Static Information",
       "Statistics Information"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "Tomcat is an open source web server that provides a servlet container allowing you to run Java code.",
@@ -3153,14 +3239,16 @@ const quizData = [
       "False",
       "",
       ""
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "What is the code for getting the current time?",
     "options": [
       "var now = Date();",
       "var now = new Date(current);"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "Which are the events that have default actions that can be canceled by event handlers? 1 to 10 of 10 321 to 330 of 1,134 1 …",
@@ -3169,7 +3257,8 @@ const quizData = [
       "Reset and form-related events",
       "Submit and reset events",
       "form-related events"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "Which of the following is a way of embedding Client-side JavaScript code within HTML documents?",
@@ -3178,7 +3267,8 @@ const quizData = [
       "External file specified by the src attribute of a 'script' tag",
       "From decoding",
       "Using internal file src"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "Which of the following is not a pre-packaged server stack?",
@@ -3187,7 +3277,8 @@ const quizData = [
       "XAAMP",
       "MAMP",
       "NAMP"
-    ]
+    ],
+    "correctAnswer": 3
   },
   {
     "question": "Which event is fired when a document and all of its external resources are fully loaded and displayed to the user?",
@@ -3196,7 +3287,8 @@ const quizData = [
       "Load",
       "Element",
       "Handler"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "The importance of software design can be summarized in a single word",
@@ -3205,7 +3297,8 @@ const quizData = [
       "complexity",
       "efficiency",
       "quality"
-    ]
+    ],
+    "correctAnswer": 3
   },
   {
     "question": "Which design model is equivalent to the detailed drawings of the access points and external utilities for a house?",
@@ -3214,7 +3307,8 @@ const quizData = [
       "Component-level design",
       "Data design",
       "Interface design"
-    ]
+    ],
+    "correctAnswer": 3
   },
   {
     "question": "What is the minimal spanning tree of the graph below by applying Prim’s algorithm with 0 as the root vertex?",
@@ -3231,7 +3325,8 @@ const quizData = [
       "Asymmetric key",
       "",
       ""
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "a. a. a. a. 1. A packet-filter firewall filters at the ___________ or _______ layer. a. a.",
@@ -3240,7 +3335,8 @@ const quizData = [
       "transport , application",
       "network, transport a link and application",
       "Group key"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "a. 1. A protocol involving a prover and a verifier a. that enables the prover to prove to a verifier without revealing any other information. This is called as ____ a. a.",
@@ -3249,7 +3345,8 @@ const quizData = [
       "Authentication proof",
       "E Mail Security",
       "Zero-Knowledge Proof"
-    ]
+    ],
+    "correctAnswer": 3
   },
   {
     "question": "a. a. 1. Digital signature does not provide _________ a. a. 1 to 10 of 10 331 to 340 of 1,134 1 …",
@@ -3258,7 +3355,8 @@ const quizData = [
       "Privacy",
       "Authentication",
       "Integrity"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "a. a. 1. Hash functions are ________ functions a. a.",
@@ -3267,7 +3365,8 @@ const quizData = [
       "Two way",
       "Multiple way",
       "Three way"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "a. a. 1. In ______ cryptography everybody has access to everyone’s public key a. a.",
@@ -3276,7 +3375,8 @@ const quizData = [
       "Asymmetric key",
       "Secret key",
       "Private key"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "1. In AES algorithm, when you have 10 rounds ,the total number of words may present as round key is _____",
@@ -3285,7 +3385,8 @@ const quizData = [
       "32",
       "64",
       "16"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "a. a. 1. Maximum possible size of padding bits in MD5 a. a.",
@@ -3294,7 +3395,8 @@ const quizData = [
       "512 Bytes",
       "32 Bytes",
       "128 Bytes"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "1. Suppose P, Q ∈ E, where P = (x1,y1) and Q = (x2,y2), we can consider how many cases of solution in elliptic curve arithmetic",
@@ -3303,7 +3405,8 @@ const quizData = [
       "2",
       "3",
       "4"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "a. a. 1. The information that gets transformed in encryption is called _____ a. a.",
@@ -3312,7 +3415,8 @@ const quizData = [
       "Cipher text",
       "Parallel text",
       "Transformed text"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "a. a. 1. The major advantage of public -key certificates is ____ a. a.",
@@ -3321,7 +3425,8 @@ const quizData = [
       "Reduced real time access to key authority",
       "Increased real time access to key authority",
       "No real time access to key authority"
-    ]
+    ],
+    "correctAnswer": 3
   },
   {
     "question": "a. a. 1. The major security threat to RSA algorithm is ____________ a. a.",
@@ -3330,7 +3435,8 @@ const quizData = [
       "Brute Force Attack",
       "Man-in the middle attack",
       "Birthday attack"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "a. a. 1. The major vulnerability of distributing the public key using – public announcement a. a.",
@@ -3339,7 +3445,8 @@ const quizData = [
       "Forgery",
       "Man-in the middle attack",
       "Birthday attack"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "a. 1. The process of making relationship between a. cipher text and key as complex as possible is called as ______ a. a. 1 to 10 of 10 341 to 350 of 1,134 1 …",
@@ -3348,7 +3455,8 @@ const quizData = [
       "Confusion",
       "Decryption",
       "Encryption"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "a. 1. Which of the following algorithm was a. developed based on the difficulty of finding log base 2 in a cyclic group ? a. a.",
@@ -3357,7 +3465,8 @@ const quizData = [
       "ElGamal",
       "DES",
       "RSA"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "a. a. 1. Which of the following is not an objective of network security? a. a.",
@@ -3366,7 +3475,8 @@ const quizData = [
       "Authentication",
       "Locking",
       "Access control"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "a. 1. Which one of the following algorithm does a. not generate fixed length digest from an arbitrary-length message? a. a.",
@@ -3375,7 +3485,8 @@ const quizData = [
       "HMAC algorithm",
       "MD5",
       "RSA"
-    ]
+    ],
+    "correctAnswer": 3
   },
   {
     "question": "a. a. 1. Which one of the following is a most insecure hash function? a. a.",
@@ -3384,7 +3495,8 @@ const quizData = [
       "One bit circular shift",
       "HMAC",
       "SHA-1"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "a. 1. Which one of the following refers to the a. technique used for verifying the integrity of the message? a. a.",
@@ -3393,7 +3505,8 @@ const quizData = [
       "Decryption algorithm",
       "Protocol",
       "Message Digest"
-    ]
+    ],
+    "correctAnswer": 3
   },
   {
     "question": "a. a. 1. Which authentication methodology will you recommend while mailing an audio file ? a. a.",
@@ -3402,7 +3515,8 @@ const quizData = [
       "PGP",
       "HMAC",
       "Email Security"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "Generally, which testing is used when shrink-wrapped software products are being established and part of an integration testing?",
@@ -3411,7 +3525,8 @@ const quizData = [
       "Smoke testing",
       "Regression Testing",
       "Validation testing"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "In which environment we can performed the Alpha testing?",
@@ -3420,7 +3535,8 @@ const quizData = [
       "Developer's end",
       "User's and developer's end",
       "tester"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "Which of the following is not part of the Test type?",
@@ -3429,7 +3545,8 @@ const quizData = [
       "System testing",
       "Statement testing",
       "Database testing"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "Which one of the following assertions concerning code inspection and code walk-through is true? 1 to 10 of 10 351 to 360 of 1,134 1 …",
@@ -3438,7 +3555,8 @@ const quizData = [
       "Code inspection and code walk-through are synonyms",
       "Adherence to coding standards is checked during code inspection",
       "Code walk-through is usually carried out by an independent test team"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "How many bits are required in the operation code? If a Computer uses a memory unit with 1 M words of 32 bits each. A binary instruction code is stored in one word of memory. The instruction has four parts: an indirect bit, an operation code, a register code part to specify one of 64 registers, and an address part",
@@ -3447,7 +3565,8 @@ const quizData = [
       "6",
       "20",
       "5"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "An 8-bit serial-in/serial-out shift register is used with a clock frequency of 100 kHz What is the time delay between the serial input and the Q5 output?",
@@ -3456,7 +3575,8 @@ const quizData = [
       "50 micro sec",
       "60 micro sec",
       "40 micro sec"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "Consider a system with an 80% hit ratio, 50 Nano- seconds times to search the associative registers, 750 Nano-seconds times to access memory. What is the effective memory access time?",
@@ -3465,7 +3585,8 @@ const quizData = [
       "950ns",
       "640ns",
       "310ns"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "In a six-stage pipeline assuming that there are no branch instructions. If we want to execute 15 instructions. What is the time required to execute these instructions?",
@@ -3474,7 +3595,8 @@ const quizData = [
       "15",
       "21",
       "20"
-    ]
+    ],
+    "correctAnswer": 3
   },
   {
     "question": "Which of the following is true about DMA?",
@@ -3483,7 +3605,8 @@ const quizData = [
       "The DMA controller acts as a processor for DMA transfers and does not overlooks the enre process.",
       "The DMA controller has 6 registers.",
       "The DMA has separate PSW"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "Parallel Overhead is",
@@ -3492,7 +3615,8 @@ const quizData = [
       "The amount of time required to coordinate parallel tasks. It includes factors such as: Task start-up time, Synchronizations, Data communications",
       "Refers to the hardware that comprises a given parallel system - having many processors",
       "Refers to the hardware that comprises a given parallel system - having single processors"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "The CPU activities the ................... output to inform the external DMA that the buses are in the high-impedance state.",
@@ -3501,7 +3625,8 @@ const quizData = [
       "Bus Grant",
       "Cycle stealing",
       "Bus relinquishes"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "How many bits are required in the operation code? If a Computer uses a memory unit with 1 M words of 32 bits each. A binary instruction code is stored in one word of memory. The instruction has four parts: an indirect bit, an operation code, a register code part to specify one of 64 registers, and an address part",
@@ -3510,7 +3635,8 @@ const quizData = [
       "6",
       "20",
       "5"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "1. A mod-2 counter followed by a mod-5 counter is",
@@ -3519,7 +3645,8 @@ const quizData = [
       "A decade counter",
       "A mod-7 counter",
       "Ripple carry Counter"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "1. A ring counter is same as",
@@ -3528,7 +3655,8 @@ const quizData = [
       "Parallel counter",
       "Shift register",
       "Ripple carry counter"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "1. In which of the following adder circuits, the carry look ripple delay is eliminated ?",
@@ -3537,7 +3665,8 @@ const quizData = [
       "Full Adder",
       "Parallel Adder",
       "Carry-Look-Ahead Adder"
-    ]
+    ],
+    "correctAnswer": 3
   },
   {
     "question": "1. Odd parity of word can be conveniently tested by",
@@ -3546,7 +3675,8 @@ const quizData = [
       "AND Gate",
       "NOR Gate",
       "XOR Gate"
-    ]
+    ],
+    "correctAnswer": 3
   },
   {
     "question": "1. The number of flip-flops required in a modulo N counter is",
@@ -3555,7 +3685,8 @@ const quizData = [
       "log (N-1) 2",
       "log (N) 2",
       "N log (N) 2"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "1. The number of full and half-adders required to add 16-bit numbers is",
@@ -3564,7 +3695,8 @@ const quizData = [
       "1 half-adder, 15 full-adders",
       "16 half-adders, 0 full-adders",
       "4 half-adders, 12 full-adders"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "1. The ring counter is analogous to",
@@ -3573,7 +3705,8 @@ const quizData = [
       "Latch",
       "Stepping Switch",
       "JK Flip Flop"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "1. The time required for a gate or inverter to change its state is called",
@@ -3582,7 +3715,8 @@ const quizData = [
       "Decay time",
       "Propagation time",
       "Charging time"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "1. What is the minimum number of two-input NAND gates used to perform the function of two input OR gate?",
@@ -3591,7 +3725,8 @@ const quizData = [
       "Two",
       "Three",
       "Four"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "1. Which of the following statements is wrong ?",
@@ -3600,7 +3735,8 @@ const quizData = [
       "Noise immunity is the amount of noise which can be applied to the input of a gate without causing the gate to change state",
       "Fan-in of a gate is always equal to fan-out of the same gate",
       "Operating speed is the maximum frequency at which digital data can be applied to a gate"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "1. Which one of the following set of gates are best suited for 'parity' checking and 'parity' generation.",
@@ -3609,7 +3745,8 @@ const quizData = [
       "EX-NOR or EX-OR gates",
       "NAND gates",
       "NOR gates"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "Choose an acon that cannot be performed in Airline Industry using Data Science 1 to 10 of 10 371 to 380 of 1,134 1 …",
@@ -3618,7 +3755,8 @@ const quizData = [
       "Promotional Offers for Customers",
       "Charter a flight despite bad weather",
       "Route Planning"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "All the following tools are used for process descriptions except:",
@@ -3627,7 +3765,8 @@ const quizData = [
       "Decision tables",
       "Structured English",
       "Pseudocode"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "Build & Fix Model is most appropriate for implementing programming exercises of .....................LOC (Line of Code)",
@@ -3636,7 +3775,8 @@ const quizData = [
       "200-400",
       "400-1000",
       "above 1000"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "CMM model in Software Engineering is a technique of",
@@ -3645,7 +3785,8 @@ const quizData = [
       "Improve the software process.",
       "Improve the testing process.",
       "Identifying the errors during maintenance."
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "How many characteristics does Value Adjustment Factor(VAF) in Function Point Analysis have?",
@@ -3654,7 +3795,8 @@ const quizData = [
       "12",
       "13",
       "14"
-    ]
+    ],
+    "correctAnswer": 3
   },
   {
     "question": "The model remains operative until the software is retired",
@@ -3663,7 +3805,8 @@ const quizData = [
       "Spiral",
       "Incremental",
       "Prototyping"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "A simple approach that is efficient when it works but does not always work is",
@@ -3672,7 +3815,8 @@ const quizData = [
       "brute-force",
       "greedy",
       "dynamic-programming"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "Assuming P != NP, which of the following is true",
@@ -3681,7 +3825,8 @@ const quizData = [
       "NP-complete intersection P = empty",
       "NP-hard = NP",
       "P = NP-complete"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "Both FIFO branch and bound strategy and backtracking leads to depth first search",
@@ -3690,7 +3835,8 @@ const quizData = [
       "False",
       "NIL",
       "NIL"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "Choose the correct statement from the following",
@@ -3699,7 +3845,8 @@ const quizData = [
       "branch and bound is not suitable where a greedy algorithm is not applicable",
       "branch and bound divides a problem into at least 2 new restricted sub problems",
       "backtracking divides a problem into at least 2 new restricted sub problems"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "If class P is not equal to class NP 1 to 10 of 10 381 to 390 of 1,134",
@@ -3708,7 +3855,8 @@ const quizData = [
       "There can be no polynomial algorithm for 3SAT",
       "3SAT is not polynomial time reducible to Clique",
       "Clique is not polynomial time reducible to 3SAT 1"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "In how many directions do queens attack each other",
@@ -3717,7 +3865,8 @@ const quizData = [
       "2",
       "3",
       "4"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "In what manner is a state-space tree for a backtracking algorithm constructed",
@@ -3726,7 +3875,8 @@ const quizData = [
       "Breadth-first search",
       "Twice around the tree",
       "Nearest neighbor first"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "Minimum number of unique colors required for vertex coloring of a graph is called",
@@ -3735,7 +3885,8 @@ const quizData = [
       "chromatic index",
       "chromatic number",
       ""
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "The approach to algorithm design for optimization problems that makes direct use of the fact that the most apparent next component of a solution is part of the optimal solution is",
@@ -3744,7 +3895,8 @@ const quizData = [
       "greedy",
       "brute force",
       "dynamic programming"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "What happens when the backtracking algorithm reaches a complete solution",
@@ -3753,7 +3905,8 @@ const quizData = [
       "It continues searching for other possible solutions",
       "It traverses from a different route",
       "Recursively traverses through the same route"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "What happens when the value of k is 0 in the Floyd Warshall Algorithm",
@@ -3762,7 +3915,8 @@ const quizData = [
       "0 intermediate vertex",
       "N intermediate vertices",
       ""
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "What is vertex coloring of a graph",
@@ -3771,7 +3925,8 @@ const quizData = [
       "A condition where any two vertices having a common edge should always have same color",
       "A condition where all vertices should have a different color",
       "A condition where all vertices should have same color"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "Which data structure is used for implementing a LIFO branch and bound strategy",
@@ -3780,7 +3935,8 @@ const quizData = [
       "Queue",
       "Array",
       "Linked list"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "Which of the following can traverse the state space tree only in DFS manner",
@@ -3789,7 +3945,8 @@ const quizData = [
       "dynamic programming",
       "greedy algorithm",
       "backtracking"
-    ]
+    ],
+    "correctAnswer": 3
   },
   {
     "question": "Which of the following is true about NP-Complete and NP-Hard problems 1 to 10 of 10 391 to 400 of 1,134 1 …",
@@ -3798,7 +3955,8 @@ const quizData = [
       "The first problem that was proved as NP- complete was the circuit satisfiability problem",
       "NP-complete is a subset of NP Hard",
       "NP hard"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "Which of the following methods can be used to solve n-queen’s problem",
@@ -5002,7 +5160,8 @@ const quizData = [
       "3",
       "4",
       "5"
-    ]
+    ],
+    "correctAnswer": 3
   },
   {
     "question": "a) A counting semaphore has a value of 8 at any given time of a) computation. On this semaphore, 15 P operations and 20 V operations were completed. The a) semaphore's resulting value is: a)",
@@ -5011,7 +5170,8 @@ const quizData = [
       "2",
       "13",
       "3"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "A process has been allocated 3 page frames. Assume that none of the pages of the process are available in the memory initially. The process makes the following sequence of page references (reference string): 1, 2, 1, 3, 7, 4, 5, 6, 3, 1 If optimal page replacement policy is used, how many page faults occur for the above reference string?",
@@ -5020,7 +5180,8 @@ const quizData = [
       "8",
       "9",
       "10"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "A ________ is a structured representation of data.",
@@ -5029,7 +5190,8 @@ const quizData = [
       "Database Table",
       "Data base record",
       "Data Frame"
-    ]
+    ],
+    "correctAnswer": 3
   },
   {
     "question": "A _________ is used to demonstrate, on a purely syntactic basis, that one formula is a logical consequence of another formula.",
@@ -5038,7 +5200,8 @@ const quizData = [
       "Inductive Systems",
       "Reasoning with Knowledge Based Systems",
       "Based Systems"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "A _______________ applies a set of rules to each incoming and outgoing IP packet and then forwards or discards the packet.",
@@ -5047,7 +5210,8 @@ const quizData = [
       "Application proxy firewall",
       "Packet filtering firewall",
       "Circuit-level proxy firewall"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "A _____is a round trip path along n edges of G that visits every vertex once and return to its starting position",
@@ -5056,7 +5220,8 @@ const quizData = [
       "Travelling salesman problem",
       "Multistage graph",
       "Hamiltonian Circuit"
-    ]
+    ],
+    "correctAnswer": 3
   },
   {
     "question": "A BCNF is :",
@@ -5065,7 +5230,8 @@ const quizData = [
       "loss less join but not dependency preserving",
       "not loss less join but dependency preserving",
       "dependency preserving"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "A course instructor has data about students’ attendance in her course in the past semester. She then correlates the attendance with their final exam scores. She realizes that students who score 90% and above also have an attendance of more than 75%. What type of analytics is she doing?",
@@ -5074,7 +5240,8 @@ const quizData = [
       "Diagnostic Analytics",
       "Predictive Analytics",
       "Prescriptive Analytics"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "A diagnostic test has 99% accuracy and 60% of all people have Covid-19. If a patient tests positive, what is the probability that they actually have the disease? 1 to 10 of 10 521 to 530 of 1,134 1 …",
@@ -5083,7 +5250,8 @@ const quizData = [
       "0.544",
       "0.999",
       "0.993"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "A finite automata that will accept only string X of length n will have _________ many states",
@@ -5092,7 +5260,8 @@ const quizData = [
       "n/2",
       "n+1",
       "infinite"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "A functional dependency between two or more non-key attributes is called -------------------",
@@ -5101,7 +5270,8 @@ const quizData = [
       "Join dependency",
       "Transitive dependency",
       "Trivial dependency"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "A graphical representation of a data set is referred to as a ______ .",
@@ -5110,7 +5280,8 @@ const quizData = [
       "Data Set",
       "Investigative Cycle",
       "Data formatting"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "A Hybrid Bayesian network contains ______.",
@@ -5119,7 +5290,8 @@ const quizData = [
       "Only Discrete variables",
       "Both Discrete and Discontinuous variable",
       "Continuous variable only"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "A Hybrid Bayesian network contains ___________",
@@ -5128,7 +5300,8 @@ const quizData = [
       "Only Discrete variables",
       "Only Discontinuous variable",
       "Both Discrete and Discontinuous variable"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "A language is represented by a regular expression (a)*(a+ba). Which of the following string does not belong to the regular set represented by the above expression",
@@ -5137,7 +5310,8 @@ const quizData = [
       "aba",
       "ababa",
       "aa"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "A language is represented by a regular expression (a)*(a+ba). Which of the following string does not belong to the regular set represented by the above expression.",
@@ -5146,7 +5320,8 @@ const quizData = [
       "aba",
       "ababa",
       "aa"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "A linear list in which insertions to and deletions from are made either end of the structure is a",
@@ -5155,7 +5330,8 @@ const quizData = [
       "Priority queue",
       "Stack",
       "Dequeue"
-    ]
+    ],
+    "correctAnswer": 3
   },
   {
     "question": "A machine language instruction format consists of",
@@ -5164,7 +5340,8 @@ const quizData = [
       "only operand field",
       "only op-code field",
       "only register field"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "A minimum state DFA accepting the language L={w|w belongs {0,1}*} number of 0s and 1s in w are divisible by 3 and 5, respectively} has 1 to 10 of 10 531 to 540 of 1,134 1 …",
@@ -5173,7 +5350,8 @@ const quizData = [
       "7 states",
       "9 states",
       "8 states"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "A NFA converted to DFA has more than one final state.",
@@ -5182,7 +5360,8 @@ const quizData = [
       "False",
       "may be true",
       "always true"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "A plan that describe how to take actions in levels of increasing refinement and specificity is ____________",
@@ -5191,7 +5370,8 @@ const quizData = [
       "Planning",
       "Non-hierarchical plan",
       "Hierarchical plan"
-    ]
+    ],
+    "correctAnswer": 3
   },
   {
     "question": "A production rule consists of ____________",
@@ -5200,7 +5380,8 @@ const quizData = [
       "A sequence of steps",
       "Set of Rule & sequence of steps",
       "Arbitrary representation to problem"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "A program P calls two subprograms P1 and P2. The P1 can fail 50% times and P2 can fail 40% times. The program P can fail:",
@@ -5209,7 +5390,8 @@ const quizData = [
       "70%",
       "60%",
       "10%"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "A program P reads in 1000 integers in the range [0, 100] representing the scores of 500 students. It then prints the frequency of each score above 50. What would be the best way for P to store the frequencies?",
@@ -5218,7 +5400,8 @@ const quizData = [
       "an array of 500 numbers",
       "an array of 50 numbers",
       "an array of 100 numbers"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "A queue is implemented using an array such that ENQUEUE and DEQUEUE operations are performed efficiently. Which one of the following statements is CORRECT? (n refers to the number of items in the QUEUE).",
@@ -5227,7 +5410,8 @@ const quizData = [
       "Both operations can be performed in O(1) time",
       "ENQUEUE can be performed in O(1) time and DEQUEUE can be performed in O(n) time",
       "ENQUEUE can be performed in O(n) time and DEQUEUE can be performed in O(1) time"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "A randomized algorithm uses random bits as input inorder to achieve a _____________ good performance over all possible choice of random bits.",
@@ -5236,7 +5420,8 @@ const quizData = [
       "best case",
       "average case",
       "Average and best"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "A recursive function is defined as follows: If the value of h(4) is 88 then the value of k is :",
@@ -5245,7 +5430,8 @@ const quizData = [
       "0",
       "1",
       "-1"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "A regression model in which more than one independent variable is used to predict the dependent variable is called ______.",
@@ -5254,7 +5440,8 @@ const quizData = [
       "Multiple regression model",
       "Independent model",
       "Association model"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "A relation empdt1 is defined with attributes Empdata (empcode, name, street, city, state, pincode). For any pincode, there is only one city and state. Also, for given street, city and state, there is just one pincode. In normalization terms, Empdata is a relation in 1 to 10 of 10 541 to 550 of 1,134 1 …",
@@ -5263,7 +5450,8 @@ const quizData = [
       "2 NF and hence also in 1 NF",
       "3NF and hence also in 2NF and 1NF",
       "BCNF and hence also in 3NF, 2NF and 1NF"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "A researcher has developed a new ITS, which teaches calculus to 12th students. To check the effectiveness of this intervention, the researcher can select:",
@@ -5272,7 +5460,8 @@ const quizData = [
       "Data was collected from all previous studies.",
       "Data collected from previous studies belonging to the same class of calculus",
       "Data collected from a physics ITS can also use because both are science subject"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "A search algorithm takes _________ as an input and returns ________ as an output.",
@@ -5281,7 +5470,8 @@ const quizData = [
       "Solution, problem",
       "Input, output",
       "Parameters, sequence of actions"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "A simple approach that is efficient when it works, but does not always work, is",
@@ -5290,7 +5480,8 @@ const quizData = [
       "brute-force",
       "Greedy",
       "dynamic programming"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "A singly circular linked list with a header pointing to the last node",
@@ -5299,7 +5490,8 @@ const quizData = [
       "array",
       "linked list",
       "stack"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "A software requirement specification (SRS) document must avoid which among following:",
@@ -5308,7 +5500,8 @@ const quizData = [
       "User interface issues",
       "Interface with third party software",
       "Non-functional requirements"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "A space found in a library that is designed around the social construction of knowledge is",
@@ -5317,7 +5510,8 @@ const quizData = [
       "Information Commons",
       "Source of Data",
       "data"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "A table is in the ………………….. if only candidate keys are the determinants",
@@ -5326,7 +5520,8 @@ const quizData = [
       "Fourth Normal Form",
       "Fifth Normal Form",
       "Third Normal Form"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "A*-A+ =",
@@ -5335,7 +5530,8 @@ const quizData = [
       "A",
       "A*",
       "A+"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "match the attributes given in List-I with their definitions in List-II: List I List II i. Relationship between level of a. Functionality performance and amount of resources ii. Characteristics related with b. Reliability achievement of purpose iii. Effort needed to make for c. Efficiency improvement iv. Capability of software to d. Maintainability maintain Choose the correct option from the ones given below:",
@@ -5344,7 +5540,8 @@ const quizData = [
       "(a)-(ii), (b)-(i), (c)-(iv), (d)- (iii)",
       "(a)-(ii), (b)-(iv), (c)-(i), (d)- (iii)",
       "(a)-(i), (b)-(ii), (c)-(iv), (d)- (iii)"
-    ]
+    ],
+    "correctAnswer": 3
   },
   {
     "question": "According to the “shape” of the data, If mean = median = mode, the shape of the distribution is _____________ 1 to 10 of 10 551 to 560 of 1,134",
@@ -5353,7 +5550,8 @@ const quizData = [
       "Asymmetric",
       "Equal",
       "Not equal"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "Adaptive maintenance is a maintenance which __________.",
@@ -5482,7 +5680,8 @@ const quizData = [
       "a set of subgoals to a goal, a set of facts to new fact",
       "a goal to a set of subgoals, a set of facts to a new fact",
       "a set of facts to a new fact, a set of subgoals to a goal"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "An instruction pipeline can be implemented by means of",
@@ -5521,7 +5720,8 @@ const quizData = [
       "View, Logical, Physical",
       "View, Physical, Logical",
       "Physical, View, Logical"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "Arrange the following sentences in the correct order of sequence with respect to its data processing stages: a. Analyze data b. Pre-process data c. Collect data d. Get approval from Ethics Committee to conduct research and collect data e. Get participants consent",
@@ -5578,7 +5778,8 @@ const quizData = [
       "7 and 1, 2, 4, 5",
       "8 and 1, 2, 4, 5",
       "9 and 1, 2, 3, 5"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "Assume the array implementation of a circular queue. Which of the following conditions holds when there is only one element in the queue?",
@@ -5607,7 +5808,8 @@ const quizData = [
       "Ford Fulkerson",
       "Edmonds-karp",
       "Push-relabel"
-    ]
+    ],
+    "correctAnswer": 3
   },
   {
     "question": "a) Assuming the current disk cylinder to be 49 and the sequence for the a) cylinders to be 2, 34, 48, 63, 51, 10, 3, 21, 54, 15, 64 and 81. Find the sequences of servicing using the Shortest Seek Time First (SSTF) disk a) schedule algorithm. a)",
@@ -5616,7 +5818,8 @@ const quizData = [
       "48, 51, 54, 63, 64, 81, 34, 21, 15, 10, 3, 2",
       "48, 51, 54, 63, 64, 81, 2, 3, 10, 15, 21, 34",
       "2, 3, 10, 15, 21, 34, 48, 51, 54, 63, 64, 81"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "baa*c denotes the set",
@@ -5635,7 +5838,8 @@ const quizData = [
       "Small Space",
       "Advanced Game Theory",
       "Network Design"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "Blind can be used for which of the following situations? 1 to 10 of 10 581 to 590 of 1,134 1 …",
@@ -5644,7 +5848,8 @@ const quizData = [
       "Small search space",
       "Advanced game theory",
       "Large search space"
-    ]
+    ],
+    "correctAnswer": 3
   },
   {
     "question": "Can a DFSA simulate a NFSA",
@@ -5663,7 +5868,8 @@ const quizData = [
       "Only statement 1 is correct",
       "Only statement 3 is correct",
       "Statement 1 and 3 are correct"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "Choose the equivalent prefix form of the following expression (a+ (b−c)) ∗ ((d−e)/(f + g − h))",
@@ -5682,7 +5888,8 @@ const quizData = [
       "No need to build application from scratch",
       "App developer to change third party API as per business requirement",
       "No need to maintain"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "Choose the incorrect statement with respect to Non-Functional Requirement (NFR).",
@@ -5691,7 +5898,8 @@ const quizData = [
       "Process-oriented Approach – Focus on how NFRs can be used in the design process",
       "Quantitative Approach – Find measurable scales for the functionality attributes",
       "Qualitative Approach – Study various relationships between quality goals"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "Chose the false statement in regard to visualization techniques",
@@ -5700,7 +5908,8 @@ const quizData = [
       "Histogram and box plots can be used to show distribution.",
       "A scatter plot can show a correlation.",
       "Pie chart and area charts can show distribution."
-    ]
+    ],
+    "correctAnswer": 3
   },
   {
     "question": "CII, UTF-8, UTF-16 etc., are _____",
@@ -5709,7 +5918,8 @@ const quizData = [
       "Function Encodings",
       "Character Encodings",
       "Member Encodings"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "Circular queue is superior to linear queue in (I) Efficiency of implementation (II) Effective space utilization Pick the correct choice",
@@ -5718,7 +5928,8 @@ const quizData = [
       "Only II is true",
       "Both I and II are true",
       "Both I and II are false"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "Cloud computing is a concept that involves pooling physical resources and offering them as --------- resource?",
@@ -5976,7 +6187,8 @@ const quizData = [
       "A-B-D-5",
       "A-B-E-6",
       "A-C-F-1"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "Consider the virtual page reference string: a) 1, 2, 3, 2, 4, 1, 2, 3, 4, 1 on a demand paged virtual memory system running on a computer system that has main memory a) size of 3 page frames which are initially empty. Let LRU FIFO and OPTIMAL denote the number of page faults under the a) corresponding page replacement policy. Then, what is page fault value of FIFO, OPTIMAL and LRU respectively? a)",
@@ -6065,7 +6277,8 @@ const quizData = [
       "n+1",
       "2^n+1",
       "2^k+1"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "During a write operaon if the required block is not present in the cache then ______ occurs.",
@@ -6164,7 +6377,8 @@ const quizData = [
       "55",
       "No output",
       "1"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "Finding the shortest path is a ___________ problem",
@@ -6223,7 +6437,8 @@ const quizData = [
       "B-C-E-J-I-H, 18",
       "B-C-E-I-H, 15",
       "B-D-E-I-H, 17"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "S2 is 0.3 and the probability of The action cost involved here values of S1, S2, S3 and S4 are respectively. What is the utility 1 to 10 of 10 641 to 650 of 1,134",
@@ -6232,7 +6447,8 @@ const quizData = [
       "70",
       "90",
       "100 1 1 …"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "value of the state S0?",
@@ -6241,7 +6457,8 @@ const quizData = [
       "52",
       "121",
       "100"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "For which of the following tasks, stack is not suitable data structure? (a) Binary search in an array (b) Breadth first search (c) Implementing function calls (d) Process scheduling",
@@ -6380,7 +6597,8 @@ const quizData = [
       "Grouped bar graphs",
       "Dual-axis charts",
       "Scatter plots"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "How can you show the relationship between two continuous variables in a 3D space?",
@@ -7044,7 +7262,8 @@ const quizData = [
       "B is true",
       "Either A or B can be true depending upon situation",
       "Neither A nor B is true"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "In python programming regular expressions, “\\s” is used for ____",
@@ -7063,7 +7282,8 @@ const quizData = [
       "lm",
       "glm",
       "glr"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "In R, which data structure able to store different kinds of object?",
@@ -7072,7 +7292,8 @@ const quizData = [
       "Vector",
       "Matrix",
       "Data frame"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "In R, which multiple linear regression equation can we input in the formula parameter?",
@@ -7081,7 +7302,8 @@ const quizData = [
       "Salary = *",
       "Salary ~ .",
       "Salary = Experience + Age"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "In regression, the equation that describes how the response variable (y) is related to the explanatory variable (x) is",
@@ -7090,7 +7312,8 @@ const quizData = [
       "the regression mode",
       "used to compute the correlation coefficient",
       "does not correlate"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "In relational algebra, Cross Product (Cartesian product) is a/an________________ operator.",
@@ -7099,7 +7322,8 @@ const quizData = [
       "Unary",
       "Ternary",
       "Both Binary and Unary"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "In simple linear regression, we use optimization to:",
@@ -7138,7 +7362,8 @@ const quizData = [
       "Box plots",
       "Histogram",
       "Stem-and-leaf plots"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "In unsupervised learning, the dataset does not have ______.",
@@ -7187,7 +7412,8 @@ const quizData = [
       "not valid",
       "valid but not interpretable",
       "not valid because KB is inconsistent"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "8. S (4, 7, disjunctive syllogism) It is estimated that 50% of emails are spam emails. Some software has been applied to filter these spam emails before they reach your inbox. A certain brand of software claims that it can detect 99% of spam emails and the probability of a false positive (anon-spam email detected as spam) is 5%. Now if an email is detected as spam, then what is the probability that it is in fact a non-spam email?",
@@ -7304,7 +7530,8 @@ const quizData = [
       "v-1",
       "u-1v-1",
       ""
-    ]
+    ],
+    "correctAnswer": 3
   },
   {
     "question": "Let f (n) and g(n) be asymptotically positive functions. Which of the following is true? (I) f (n) = O((g(n)) implies g(n) = O(f (n)) (II) f (n) + g(n) = Θ(min(f (n), g(n)))",
@@ -7313,7 +7540,8 @@ const quizData = [
       "only II",
       "both I and II",
       "neither I nor II"
-    ]
+    ],
+    "correctAnswer": 3
   },
   {
     "question": "Linear Regression is the supervised machine learning model in which the model finds the best fit ___ between the independent and dependent variable. 1 to 10 of 10 751 to 760 of 1,134 1 …",
@@ -7332,7 +7560,8 @@ const quizData = [
       "because of both I and II",
       "because of only II",
       "not because of I and II"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "Logistic regression is used when you want to _____",
@@ -7341,7 +7570,8 @@ const quizData = [
       "Predict a continuous variable from dichotomous variables.",
       "Predict any categorical variable from several other categorical variables.",
       "Predict a continuous variable from dichotomous or continuous variables."
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "Match the List 1 to List 2 and choose the correct option. 1. Requirement Elicitation ——- a. Module Development and integration 2. Design——————————b. Analysis 3. Implementation——————c. Structure and behavioral 4. Maintenance ——————— d. Performance tuning",
@@ -7350,7 +7580,8 @@ const quizData = [
       "1-c , 2-a , 3-b , 4-d",
       "1-a , 2-c , 3-d , 4-b",
       "1-b , 2-c , 3-a , 4-d"
-    ]
+    ],
+    "correctAnswer": 3
   },
   {
     "question": "Match the following. List-I A. Myhill-Nerode Theorem coloring",
@@ -7359,7 +7590,8 @@ const quizData = [
       "Graph",
       "A – 2, B – 1, C – 4, D – 3",
       ""
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "B. Arden's Theorem is regular or not C. Register allocation evaluation D. Operator precedence expression",
@@ -7368,7 +7600,8 @@ const quizData = [
       "Expression",
       "",
       "Regular A – 2, B – 3, C – 4, D – 1"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "Matplotlib is ________ plotting",
@@ -7377,7 +7610,8 @@ const quizData = [
       "2D",
       "3D",
       "4D"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "Max-flow is unique for the graph provided",
@@ -7386,7 +7620,8 @@ const quizData = [
       "No",
       "May be",
       "None of these"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "MQTT protocol works on the principle of .....",
@@ -7395,7 +7630,8 @@ const quizData = [
       "Publish and Subscribe",
       "Push and Pull",
       "Send and Receive"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "Multi-player video game is an example of _____ AI environment.",
@@ -7404,7 +7640,8 @@ const quizData = [
       "Continuous",
       "Static",
       "Single agent"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "n structural language, we can't add a new sort of",
@@ -7413,7 +7650,8 @@ const quizData = [
       "function",
       "variable",
       "constant"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "n the Spiral model of software development, the primary determinant in selecting activities in each iteration is 1 to 10 of 10 761 to 770 of 1,134",
@@ -7422,7 +7660,8 @@ const quizData = [
       "Cost",
       "Adopted process such as Rational Unified Process or Extreme Programming",
       "Risk"
-    ]
+    ],
+    "correctAnswer": 3
   },
   {
     "question": "On which approach the face recognition system is based?",
@@ -7431,7 +7670,8 @@ const quizData = [
       "Cognitive AI Approach",
       "Strong AI Approach",
       "Applied AI Approach"
-    ]
+    ],
+    "correctAnswer": 3
   },
   {
     "question": "One of the most attractive applications of public-key algorithms is the establishment of a secure session key for a private-key algorithm such as Advanced Encryption Standard over an insecure channel. Assume Bob has a pair of public/private keys for the RSA cryptosystem. Suppose they develop a simple protocol using RSA which allows the two parties Alice and Bob to agree on a shared secret key. Who determines the key in this protocol?",
@@ -7440,7 +7680,8 @@ const quizData = [
       "Bob",
       "Both",
       "Third party"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "Optimized version of subset sum is a ______",
@@ -7449,7 +7690,8 @@ const quizData = [
       "P",
       "NPC",
       "NP-Hard"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "Out of the following which is not a CISC machine.",
@@ -7467,7 +7709,8 @@ const quizData = [
       "Javascript",
       "Java",
       "Python"
-    ]
+    ],
+    "correctAnswer": 3
   },
   {
     "question": "Parse tree construction was a part of which NPC problem",
@@ -7476,7 +7719,8 @@ const quizData = [
       "3 CNF SAT",
       "Sub set sum",
       "All of these"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "Path existance identification is an _____________ problem",
@@ -7485,7 +7729,8 @@ const quizData = [
       "Decision",
       "Hard",
       "All of these"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "Pipelining strategy is called implement",
@@ -7494,7 +7739,8 @@ const quizData = [
       "instruction pre fetch",
       "instruction decoding",
       "instruction manipulation"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "Point out the correct statements about hybrid cloud",
@@ -7503,7 +7749,8 @@ const quizData = [
       "Two public cloud",
       "At least one private cloud & one public cloud",
       "Many clouds from two or more different cloud providers"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "Predict the output of the following R code: as <- c('green','green','yellow','red','red','red','green') fa<- factor(as) print(nlevels(fa)) 1 to 10 of 10 771 to 780 of 1,134 1 …",
@@ -7512,7 +7759,8 @@ const quizData = [
       "5",
       "3",
       "Levels: green red yellow"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "Predict the output of the following R code: weight <- 63.5 # print(weight) print(class(weight))",
@@ -7521,7 +7769,8 @@ const quizData = [
       "63.5 integer",
       "numeric",
       "63.5 numeric"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "Pretty Good Privacy (PGP) encryption makes use of ______ types of keys",
@@ -7530,7 +7779,8 @@ const quizData = [
       "Three",
       "Four",
       "Five"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "Private clouds are",
@@ -7539,7 +7789,8 @@ const quizData = [
       "dedicated service over public cloud",
       "service for unique / dedicated task",
       "distributed systems for a consumer"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "Procedural Domain Knowledge in a rule- based system is classified in the form of ____",
@@ -7548,7 +7799,8 @@ const quizData = [
       "Production Rules",
       "Meta Rules",
       "Chain Rules"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "Queues serve major role in",
@@ -7557,7 +7809,8 @@ const quizData = [
       "Simulation of recursion",
       "Simulation of arbitrary linked list",
       "Expression evaluation"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "Quick sort uses which of the following method to implement sorting",
@@ -7566,7 +7819,8 @@ const quizData = [
       "Partitioning",
       "Selection",
       ""
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "Quicksort uses which approach to algorithm design",
@@ -7575,7 +7829,8 @@ const quizData = [
       "greedy",
       "brute force",
       "dynamic programming"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "R files have an extension _____.",
@@ -7584,7 +7839,8 @@ const quizData = [
       ".RP",
       ".RL",
       ".S"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "R is an interpreted language so it can access through _____________.",
@@ -7593,7 +7849,8 @@ const quizData = [
       "Disk operating system",
       "Operating system",
       "User interface operating system"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "R is an__________ programming language. 1 to 10 of 10 781 to 790 of 1,134",
@@ -7602,7 +7859,8 @@ const quizData = [
       "Open source",
       "Closed source",
       "Definite source"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "Regarding user-level threads and kernel-supported threads, consider the following remarks. 1. Use-level threads are transparent to the kernel 2. Context switch is faster with kernel- supported threads 3. Kernel-supported threads can be scheduled independently 4. For user-level threads, a system call can block the entire process",
@@ -7611,7 +7869,8 @@ const quizData = [
       "1, 2, & 3",
       "1, 3, & 4",
       "2 & 4"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "Relation R has eight attributes ABCDEFGH. Fields of R contain only atomic values. F = {CH -> G, A -> BC, B -> CFH, E -> A, F -> EG} is a set of functional dependencies (FDs) so that F+ is exactly the set of FDs that hold for R. How many candidate keys does the relation R have?",
@@ -7620,7 +7879,8 @@ const quizData = [
       "4",
       "8",
       "No Limit"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "Relation R with an associated set of functional dependencies, F is decomposed into BCNF. The redundancy based on functional dependencies in the resulting set relations is.",
@@ -7629,7 +7889,8 @@ const quizData = [
       "Redundancy with prime attribute",
       "Proportional to the size of F+",
       "Redundancy with candidate key."
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "Representation of data structures in memory is known as",
@@ -7638,7 +7899,8 @@ const quizData = [
       "Abstract data type",
       "Storage Structure",
       "File structure"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "Root Mean Squared error give difference between_________.",
@@ -7647,7 +7909,8 @@ const quizData = [
       "predicted value and actual value",
       "True value and false value",
       "True positive and False positive"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "RTN stands for ___________",
@@ -7656,7 +7919,8 @@ const quizData = [
       "Register Transmission Notaon",
       "Regular Transmission Notaon",
       "Regular Transfer Notaon"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "Running time of Jarvis march is",
@@ -7665,7 +7929,8 @@ const quizData = [
       "O(N log N)",
       "O(N2)",
       ""
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "SaaS does not necessarily mean that the software is?",
@@ -7674,7 +7939,8 @@ const quizData = [
       "static",
       "sololithic",
       "diolithic"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "SaaS supports multiple users and provides a shared data model through _________ model",
@@ -7683,7 +7949,8 @@ const quizData = [
       "multi-tenancy",
       "multiple-instance",
       "single-instance"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "a) Scheduling is a) a) 1 to 10 of 10 791 to 800 of 1,134 1 …",
@@ -7692,7 +7959,8 @@ const quizData = [
       "quite simple to implement, even on large mainframes",
       "unrelated to performance considerations",
       "allowing job to use the processor"
-    ]
+    ],
+    "correctAnswer": 3
   },
   {
     "question": "Secure Hash Algorithm (SHA-1) is based on a ___________ construction",
@@ -8569,7 +8837,8 @@ const quizData = [
       "Partial order planning",
       "Total order planning",
       "Both Planning problem & Partial order planning"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "The process in which a file is partitioned into smaller parts and different parts are stored in different disks is",
@@ -8668,7 +8937,8 @@ const quizData = [
       "",
       "each beer consumed increases blood alcohol by an average of the",
       "each beer consumed increases blood alcohol by exactly 0.018"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "The representation of squares, circles, and triangles in a decision tree indicates the following nodes",
@@ -9076,7 +9346,8 @@ const quizData = [
       "",
       "P-2, Q-3, R-4, S-1",
       "Performance"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "What is the consequence and its predecessors while bayesian network?",
@@ -9423,7 +9694,8 @@ const quizData = [
       "O(n log n)",
       "O(n)",
       "O(n logn logn)"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "When a state in a FA has self loop its regular expression will have",
@@ -10111,7 +10383,8 @@ const quizData = [
       "Predictive modelling",
       "Fraud detection",
       "Market research"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "Which of the following is NOT a commonly used network visualization technique?",
@@ -10120,7 +10393,8 @@ const quizData = [
       "Node-link diagram",
       "Adjacency matrix",
       "Sankey diagram"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "Which of the following is NOT a current application of AI?",
@@ -10129,7 +10403,8 @@ const quizData = [
       "Classifying rock samples to identify best places to drill for oil",
       "Collaborative robots helping humans lift heavy containers",
       "Making precision patient diagnosis and prescribing independent treatment"
-    ]
+    ],
+    "correctAnswer": 3
   },
   {
     "question": "Which of the following is NOT a good way to define AI?",
@@ -10138,7 +10413,8 @@ const quizData = [
       "AI is the use of algorithms that enable computers to find patterns without human having to hard code them manually",
       "AI is all about machine replacing human intelligence",
       "AI is the application of computing to solve problems in an intelligent way using algorithms"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "Which of the following is not a necessary feature of an algorithm, as per the definition?",
@@ -10147,7 +10423,8 @@ const quizData = [
       "finiteness",
       "correctness",
       "efficiency"
-    ]
+    ],
+    "correctAnswer": 3
   },
   {
     "question": "Which of the following is not a potential NLP application?",
@@ -10156,7 +10433,8 @@ const quizData = [
       "Building a Chatbot",
       "Identifying Fraudulent Bank Loan Applications",
       "Generating Summary of a Text"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "Which of the following is not a type of Artificial Intelligence agent?",
@@ -10165,7 +10443,8 @@ const quizData = [
       "Goal-based AI agent",
       "Simple reflex AI agent",
       "Unity-based AI agent"
-    ]
+    ],
+    "correctAnswer": 3
   },
   {
     "question": "Which of the following is not an Integrity constraint ?",
@@ -10174,7 +10453,8 @@ const quizData = [
       "Unique",
       "Check predicate",
       "Positive"
-    ]
+    ],
+    "correctAnswer": 3
   },
   {
     "question": "Which of the following is not supervised learning?",
@@ -10183,7 +10463,8 @@ const quizData = [
       "Decision Tree",
       "Linear Regression",
       "Naïve Bayesian"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "Which of the following is the correct extension of the Python file? 1 to 10 of 10 1,041 to 1,050 of 1,134 1 …",
@@ -10192,7 +10473,8 @@ const quizData = [
       ".py",
       ".pl",
       ".p"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "Which of the following is the function of an AI Agent?",
@@ -10201,7 +10483,8 @@ const quizData = [
       "To map the goal sequence to an action",
       "To work without direct interference from any external factor like humans",
       "To map the environment sequence to an action"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "Which of the following is the syntax of Box plot in R?",
@@ -10210,7 +10493,8 @@ const quizData = [
       "box_plot(x, data, notch, varwidth, names, main)",
       "plot(x, data, notch, varwidth, names, main)",
       "boxplt(x, data, notch, varwidth, names, main)"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "Which of the following is true in divide and conquer strategy",
@@ -10219,7 +10503,8 @@ const quizData = [
       "The subproblems can be overlapped",
       "The subproblems need not be of the same type as the main problem",
       "The number of subproblems must be even"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "Which of the following is TRUE?",
@@ -10228,7 +10513,8 @@ const quizData = [
       "Every finite subset of a non- regular set is regular",
       "The union of two non-regular sets is not regular",
       "Infinite union of finite sets is regular"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "Which of the following is used to schedules jobs and tracks the assign jobs to Task tracker?",
@@ -10237,7 +10523,8 @@ const quizData = [
       "Master Node",
       "Job Tracker",
       "Task Tracker"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "Which of the following is useful in traversing a given graph by breadth first search?",
@@ -10246,7 +10533,8 @@ const quizData = [
       "queue",
       "set",
       "lst"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "Which of the following is wrong while inserting a node in the beginning of list?",
@@ -10255,7 +10543,8 @@ const quizData = [
       "Create a new node using dynamic memory allocation",
       "Make the head pointer of the current list point to the new node",
       "Make the next pointer of the new node point to current head of the list"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "Which of the following is/are true for FOL?",
@@ -10264,7 +10553,8 @@ const quizData = [
       "Resolution Refutation, Forward Chaining and Backward Chaining are complete",
       "Resolution Refutation is complete, Forward Chaining and Backward Chaining are not",
       "Forward Chaining and Resolution Refutation are complete, Backward Chaining is not"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "Which of the following operators is the correct option for power(ab)?",
@@ -10273,7 +10563,8 @@ const quizData = [
       "a**b",
       "a ^ ^ b",
       "a ^ * b"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "Which of the following package contains servlet classes? 1 to 10 of 10 1,051 to 1,060 of 1,134 1 …",
@@ -10282,7 +10573,8 @@ const quizData = [
       "java.servlet.http",
       "java.servlet",
       "javafx.servlet"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "Which of the following problem is not in NP",
@@ -10300,7 +10592,8 @@ const quizData = [
       "(aaa+bbb)*",
       "((a+b) (a+b) (a+b))*",
       "(aaa+ab+a)+(bbb+bb+a)"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "Which of the following regular expression identity is true",
@@ -10309,7 +10602,8 @@ const quizData = [
       "(r*s*)* = (r + s)",
       "(r + s)* = r* + s",
       ""
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "Which of the following regular expression identity is true?",
@@ -10318,7 +10612,8 @@ const quizData = [
       "(r * s*)*= (r+s) *",
       "(r+s) *=r*+s*",
       "r*s*=r*+s*"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "Which of the following return a subset of the columns of a data frame in R?",
@@ -10327,7 +10622,8 @@ const quizData = [
       "retrieve",
       "get",
       "set"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "Which of the following search algorithm is optimal and complete when h(n) is consistent",
@@ -10336,7 +10632,8 @@ const quizData = [
       "search",
       "search and depth first search",
       "A* search"
-    ]
+    ],
+    "correctAnswer": 3
   },
   {
     "question": "Which of the following search belongs to totally ordered plan search?",
@@ -10345,7 +10642,8 @@ const quizData = [
       "Hill-climbing search",
       "Depth-first search",
       "Breadth-first search"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "Which of the following search is identical to minimax search?",
@@ -10354,7 +10652,8 @@ const quizData = [
       "Hill-climbing",
       "Breadth-first",
       "Depth- limited"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "Which of the following search method is helpful to find better by learning Meta",
@@ -10363,7 +10662,8 @@ const quizData = [
       "search",
       "state space",
       "Greedy Best first search"
-    ]
+    ],
+    "correctAnswer": 3
   },
   {
     "question": "Which of the following search removes the branches that can’t influence the final decision, and it’s equal to minimax search? 1 to 10 of 10 1,061 to 1,070 of 1,134 1 …",
@@ -10372,7 +10672,8 @@ const quizData = [
       "Alpha-beta pruning",
       "Breadth-first",
       "Depth-limited"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "Which of the following statement is correct?",
@@ -10381,7 +10682,8 @@ const quizData = [
       "Data Encryption Standard is a Feistel cipher",
       "Advanced Encryption Standard is not a Feistel cipher",
       "Statements (b) and (c)."
-    ]
+    ],
+    "correctAnswer": 3
   },
   {
     "question": "Which of the following statement is not correct?",
@@ -10390,7 +10692,8 @@ const quizData = [
       "Data Encryption Standard is reasonably efficient in software and very fast and small in hardware",
       "For Data Encryption Standard, data are encrypted in 56-bit blocks using a 66-bit key",
       "By encrypting with Data Encryption Standard (DES) three times in a row, triple DES (3DES) is created."
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "Which of the following statement is not correct?",
@@ -10399,7 +10702,8 @@ const quizData = [
       "Advanced Encryption Standard is a bit-oriented structure",
       "Data Encryption Standard is a bit-oriented structure",
       "Both (a) and (c)"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "Which of the following statement is not correct?",
@@ -10408,7 +10712,8 @@ const quizData = [
       "In Advanced Encryption Standard, the S-Boxes have a strong algebraic structure.",
       "Statement (a) is true, but (b) is false",
       "Both Statements (a) and (b) are true."
-    ]
+    ],
+    "correctAnswer": 3
   },
   {
     "question": "Which of the following statement is not correct?",
@@ -10417,7 +10722,8 @@ const quizData = [
       "Audits and alarms can be implemented on the firewall system.",
       "A firewall can serve as the platform for IPsec",
       "The firewall may protect fully against internal threats, such as a disgruntled employee or an employee who unwittingly cooperates with an external attacker."
-    ]
+    ],
+    "correctAnswer": 3
   },
   {
     "question": "Which of the following statement is true?",
@@ -10426,7 +10732,8 @@ const quizData = [
       "DFA is more powerful than NFA",
       "NFA and DFA have equal power",
       "All the are true"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "Which of the following statement(s) is/are correct? (a) The output of a scanner is groups of characters. (b) Total number of tokens in printf(\"i=%d, &i=%x,j=%d\", i, &I,j); are 12. (c) Symbol table can be implemented by using binary search tree",
@@ -10435,7 +10742,8 @@ const quizData = [
       "Both (b) and (c)",
       "(a), (b), and (c)",
       "(a), (b)"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "Which of the following step is performed by data scientist AFTER acquiring the data?",
@@ -10444,7 +10752,8 @@ const quizData = [
       "Data Replication",
       "Data Cleansing",
       "Data Formulation"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "Which of the following stores Data as Nodes and Edges?",
@@ -10453,7 +10762,8 @@ const quizData = [
       "AWS",
       "Cassandra",
       "MS Word"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "Which of the following strings is not generated by the following grammar? S ? SaSbS|e 1 to 10 of 10 1,071 to 1,080 of 1,134 1 …",
@@ -10462,7 +10772,8 @@ const quizData = [
       "abab",
       "aababb",
       "aaabb"
-    ]
+    ],
+    "correctAnswer": 3
   },
   {
     "question": "Which of the following takes a dict of dicts or a dict of array-like sequences and returns a DataFrame?",
@@ -10781,7 +11092,8 @@ const quizData = [
       "Weakly",
       "Strongly",
       "All of these"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "Which two files are used during operation of the DBMS ?",
@@ -10870,7 +11182,8 @@ const quizData = [
       "Lossless, dependency -preserving decomposition into 3 NF is always possible",
       "Loss less, dependency - preserving decomposition into BCNF is always possible",
       "Any relation with two attributes is BCNF"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "Which-one ofthe following statements about normal forms is FALSE?",
@@ -10879,7 +11192,8 @@ const quizData = [
       "Lossless, dependency -preserving decomposition into 3 NF is always possible",
       "Loss less, dependency - preserving decomposition into BCNF is always possible",
       "Any relation with two attributes is BCNF"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "While analyzing time complexity which of the following case will not be considered?",
@@ -10888,7 +11202,8 @@ const quizData = [
       "Worse",
       "Null",
       "Average"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "While using the direct mapping technique, in a 16 bit system the higher order 5 bits are used for ________",
@@ -10897,7 +11212,8 @@ const quizData = [
       "word",
       "Tag",
       "Block"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "Windows Azure and Force.com are example of?",
@@ -10906,7 +11222,8 @@ const quizData = [
       "IaaS",
       "SaaS",
       "NaaS"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "With regard to linked lists, which of the following statements is false?",
@@ -10915,7 +11232,8 @@ const quizData = [
       "An algorithm for deleting the first element in a singly linked list requires O(n) operations in the worst case.",
       "An algorithm for finding the maximum value in a circular linked list requires O(n) operations in the worst case.",
       "An algorithm for deleting the middle element of a circular linked list requires O(n) operations in the worst case."
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "Write Through technique is used in which memory for updating the data",
@@ -10924,7 +11242,8 @@ const quizData = [
       "Main memory",
       "Auxiliary memory",
       "Cache memory"
-    ]
+    ],
+    "correctAnswer": 3
   },
   {
     "question": "You are given reviews of few movies marked as positive, negative or neutral. Classifying reviews of new movie is an example of",
@@ -10933,7 +11252,8 @@ const quizData = [
       "Unsupervised algorithm",
       "Semi-supervised algorithm",
       "Reinforcement algorithm"
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "You are given reviews of few Netflix series marked as positive, negative and neutral. Classifying reviews of a new netflix series is an example of____________",
@@ -10942,7 +11262,8 @@ const quizData = [
       "semi supervised learning",
       "supervised learning",
       "reinforcement learning"
-    ]
+    ],
+    "correctAnswer": 2
   },
   {
     "question": "You trained a binary classifier model which gives very high accuracy on the training data, but much lower accuracy on validation data. Which of the following may not be true?",
@@ -10951,7 +11272,8 @@ const quizData = [
       "This is an instance of underfitting.",
       "The training was not well regularized.",
       "The training and testing examples are sampled from different distributions."
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "You've just finished training a decision tree for spam classification, and it is getting abnormally bad performance on both your training and test sets. You know that your implementation has no bugs, so what could be causing the problem?",
@@ -10960,7 +11282,8 @@ const quizData = [
       "You are overfitting.",
       "You need to increase the learning rate.",
       "Your decision trees are too shallow."
-    ]
+    ],
+    "correctAnswer": 0
   },
   {
     "question": "“Imagine that you were recently hired as a software engineer to a company that specializes in aircraft navigation control software. While orientating yourselves to the company’s work practices, you observe that they in fact do not conduct a few tests that they should in order comply with the relevant safety standard. When you inquire about this from the project manager, he dismisses it saying that those tests unnecessary (and takes an unreasonably long time to conduct, as well as being superfluous) and that they have managed with the other so long, without any problems.”",
@@ -10969,7 +11292,8 @@ const quizData = [
       "You should do nothing and let the matter slide",
       "Although you are new to the company, and you hardly know anything about the internal processes and politics, you should insist on company changing its work practices immediately; failing which you threaten to report the matter",
       "Since you are new to the company, and you are unfamiliar with the internal processes and politics, you should first find-out more about issue and its background"
-    ]
+    ],
+    "correctAnswer": 3
   },
   {
     "question": "“Students only bunk classes they are not interested in”. Which of the following is/are correct FOL representations for the above sentence?",
@@ -10978,7 +11302,8 @@ const quizData = [
       "∀x ∀y Student(x) ∧ Class(y) ∧ Bunk(x,y) ⊃ ¬Interested(x,y)",
       "∀x ∀y Student(x) ∧ Class(y) ∧ Bunk(x,y) ∧ ¬Interested(x,y)",
       "∀x ∀y Student(x) ∧ Bunk(x,y) ⊃ Class(y) ∧ ¬Interested(x,y)"
-    ]
+    ],
+    "correctAnswer": 1
   },
   {
     "question": "………….. processes the DDL statements into a set of table containing meta data. 1 to 4 of 4 1,131 to 1,134 of 1,134",
@@ -10987,6 +11312,7 @@ const quizData = [
       "DDL Interpreter",
       "Query Optimizer",
       "Data Dictionary Manager 1 111 112"
-    ]
+    ],
+    "correctAnswer": 1
   }
 ]
